@@ -19,11 +19,11 @@ class FeedForward(nn.Module):
         nn.init.normal_(self.linear_1.weight, std=0.001)  
         nn.init.normal_(self.linear_2.weight, std=0.001)  
     def forward(self, x):
-        #print(f"x0:{x.shape},x0:{x.shape}")
+        # print(f"x0:{x.shape},x0:{x.shape}")
         x = self.dropout(F.relu(self.linear_1(x)))
-        #print(f"x0.5:{x.shape},x0.5:{x.shape}")
+        # print(f"x0.5:{x.shape},x0.5:{x.shape}")
         x = self.linear_2(x)
-        #print(f"x1:{x.shape},x1:{x.shape}")
+        # print(f"x1:{x.shape},x1:{x.shape}")
         return x
 
 # standard NORM layer of Transformer
@@ -185,20 +185,22 @@ class Tail(nn.Module):
         nn.init.constant_(self.bn1.bias , 0)
         
     def forward(self, x, b , t ):
+        print(f"x0:{x.shape}")
         x = self.bn1(x)
         # stabilizes the learning
         x = x.view(b , t , self.num_features , self.spatial_h , self.spatial_w)
+        print(f"x1:{x.shape}")
         x = self.pos_embd(x)
         x = x.view(-1, self.num_features , self.spatial_h , self.spatial_w)
 
         x = F.relu(self.Qpr(x))
-        print(f"x0:{x.shape}")
+        print(f"x2:{x.shape}")
         # x: (b,t,1024,1,1) since its a convolution: spatial positional encoding is not added
         # paper has a different base (resnet in this case): which 2048 x 7 x 4 vs 16 x 7 x 7 
         x = x.view(-1, t ,  self.d_model )
-        print(f"x1:{x.shape}")
+        print(f"x3:{x.shape}")
         x = self.bn2(x)
-        print(f"x2: {x.shape}")
+        print(f"x4: {x.shape}")
         # stabilization
         q = x[:,int(t/2),:] #middle frame is the query
         v = x # value
@@ -209,13 +211,13 @@ class Tail(nn.Module):
         q = self.L3(q, k , v)
 
         f = F.normalize(q, p=2, dim=1)
-        print(f"x3:{f.shape}")
+        print(f"x5:{f.shape}")
         # print(f"f_size:{f.shape}")
         if not self.training:
             y = self.classifier(f)
             return f
         f = self.mlp(f)
-        print(f"x4:{f.shape}")
+        print(f"x6:{f.shape}")
         y = self.classifier(f)
         y = F.softmax(y, dim=1)
         print(f"probability distribution:{y}")
