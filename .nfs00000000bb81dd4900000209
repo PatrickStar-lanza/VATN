@@ -1,0 +1,14 @@
+import os
+import glob
+
+# Define the directories to be cleaned
+dirs_to_clean = ["/home/zheng/VATN/clip_frame", "/home/zheng/VATN/collective_action"]
+
+for dir_to_clean in dirs_to_clean:
+    # Use glob to match the pattern 'cropped.jpg'
+    for file in glob.glob(f"{dir_to_clean}/**/*cropped.jpg", recursive=True):
+        try:
+            os.remove(file)
+            print(f"File {file} has been removed successfully")
+        except Exception as e:
+            print(f"Problem occurred while trying to remove file {file}: {e}")
