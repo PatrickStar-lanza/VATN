@@ -1,0 +1,4 @@
+1.run collect_data.py to classify different actions
+
+2.run pkl_preprocess.py to get the corresponding file
+

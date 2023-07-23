@@ -36,10 +36,9 @@ model = Semi_Transformer(num_classes=num_action_classes, seq_len=30).to(device)
 optimizer = torch.optim.Adam(model.parameters(), lr=0.0001)  # set learning rate to 0.0001
 
 # Function to evaluate accuracy
-def get_accuracy_and_labels(outputs, targets):
+def get_accuracy(outputs, targets):
     _, preds = torch.max(outputs, dim=1)
-    accuracy = torch.tensor(torch.sum(preds == targets).item() / len(preds))
-    return accuracy, preds, targets
+    return torch.tensor(torch.sum(preds == targets).item() / len(preds))
 
 # Early stopping initialization
 best_val_loss = float('inf')
@@ -54,10 +53,9 @@ for epoch in range(num_epochs):
 
         running_loss = 0.0
         running_acc = 0.0
-        all_preds = []
-        all_targets = []
 
         data_files = train_files if phase == 'train' else (val_files if phase == 'val' else test_files)
+
 
         # Iterate through each .pkl file
         for pkl_file in data_files:
@@ -84,21 +82,14 @@ for epoch in range(num_epochs):
                 optimizer.step()
 
             # Compute metrics
-            acc, preds, targets = get_accuracy_and_labels(outputs, action)
             running_loss += loss.item()
-            running_acc += acc
-            all_preds.extend(preds.tolist())
-            all_targets.extend(targets.tolist())
+            running_acc += get_accuracy(outputs, action)
 
         epoch_loss = running_loss / len(data_files)
         epoch_acc = running_acc / len(data_files)
 
         print(f"Epoch {epoch+1}/{num_epochs}, {phase} Loss: {epoch_loss:.4f}, {phase} Accuracy: {epoch_acc:.4f}")
-
-        # Print predicted and actual labels
-        print(f"Epoch {epoch+1}/{num_epochs}, {phase} Predicted Labels: {all_preds}")
-        print(f"Epoch {epoch+1}/{num_epochs}, {phase} Actual Labels: {all_targets}")
-
+        
         # Save the model after each epoch
         torch.save(model.state_dict(), f"/home/zheng/VATN/checkpoints/model_epoch_{epoch+1}.pt")
         

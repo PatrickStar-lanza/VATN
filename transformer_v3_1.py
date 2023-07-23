@@ -211,7 +211,7 @@ class Tail(nn.Module):
         q = self.L3(q, k , v)
 
         f = F.normalize(q, p=2, dim=1)
-        print(f"x5:{f.shape}")
+        #print(f"x5:{f.shape}")
         # print(f"f_size:{f.shape}")
         if not self.training:
             y = self.classifier(f)

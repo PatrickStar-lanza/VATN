@@ -22,20 +22,20 @@ action_dirs = [os.path.join("/home/zheng/VATN/collective_action", d) for d in os
 
 for action_dir in action_dirs:
     # Print the action directory name
-    print(f"Action directory: {action_dir}")
+    #print(f"Action directory: {action_dir}")
 
     files_in_dir = os.listdir(action_dir)
-    print(f"Files in directory: {files_in_dir}")  # Print all the files in the directory
+    #print(f"Files in directory: {files_in_dir}")  # Print all the files in the directory
 
     # Get all frames within the action directory
     frame_files = []
     for f in files_in_dir:
-        print(f"Checking file: {f}")  # Print the file being checked
+        #print(f"Checking file: {f}")  # Print the file being checked
         if os.path.splitext(f)[0].isdigit():
-            print(f"File name {f} passed isdigit check.")  # Print the file name that passed the check
+            #print(f"File name {f} passed isdigit check.")  # Print the file name that passed the check
             frame_files.append(os.path.join(action_dir, f))
-        else:
-            print(f"File name {f} failed isdigit check.")  # Print the file name that failed the check
+        #else:
+            #print(f"File name {f} failed isdigit check.")  # Print the file name that failed the check
 
     frame_files.sort(key=lambda x: int(os.path.splitext(os.path.basename(x))[0]))
 
@@ -68,18 +68,16 @@ for action_dir in action_dirs:
     non_padding_count = len(frame_files) - padding_count
 
     # Print results
-    print(f'Padded frames: {padding_count}')
-    print(f'Non-padded frames: {non_padding_count}')
+    #print(f'Padded frames: {padding_count}')
+    #print(f'Non-padded frames: {non_padding_count}')
 
     # Print non-zero parts
-    non_padding_frames = frames[len(padding_start):len(padding_start) + non_padding_count]
+    #non_padding_frames = frames[len(padding_start):len(padding_start) + non_padding_count]
 
-    print('Non-padding frames:')
-    print(non_padding_frames)
-
-    #break  # Run only one loop
+    #print('Non-padding frames:')
+    #print(non_padding_frames)
 
     # Save the clip to a pickle file
-    #pkl_file = os.path.join("/home/zheng/VATN/action_pkl", os.path.basename(action_dir) + '.pkl')
-    #with open(pkl_file, 'wb') as f:
-    #    pickle.dump(frames, f)
+    pkl_file = os.path.join("/home/zheng/VATN/action_pkl", os.path.basename(action_dir) + '.pkl')
+    with open(pkl_file, 'wb') as f:
+        pickle.dump(frames, f)
