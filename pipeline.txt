@@ -1,4 +1,10 @@
+#.运行video_to_frame.py处理视频数据
+
 1.run collect_data.py to classify different actions
 
 2.run pkl_preprocess.py to get the corresponding file
 
+3.run data_split.py split train and test data
+
+4.run total2.py to get the result
+-------------------------------------------------------------
