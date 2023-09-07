@@ -1,35 +1,50 @@
 import pandas as pd
 from sklearn.model_selection import train_test_split
 
-data = pd.read_csv('/home/zheng/VATN/completed1/total.csv')
+def count_labels(df, name):
+    label_counts = df['label'].value_counts()
+    print(f"Label counts in {name}:")
+    print(label_counts)
+    print(f"Total unique labels in {name}: {len(label_counts)}")
 
-# Count the number of samples for each label
+data = pd.read_csv('/home/zheng/VATN/completed1/total.csv')
 value_counts = data['label'].value_counts()
 
-# Identify labels with fewer than 2 samples
-to_remove = value_counts[value_counts < 2].index
-data_removed = data[data['label'].isin(to_remove)]
-
-print("Removed labels:")
-for label in to_remove:
-    print(label)
-
-# Save the removed samples to a CSV file
-data_removed.to_csv('/home/zheng/VATN/completed1/removed_samples.csv', index=False)
-
-# Exclude the removed labels from the main data
+# Remove labels with less than 3 samples
+to_remove = value_counts[value_counts < 3].index
 data = data[~data['label'].isin(to_remove)]
 
-# Split 70% of the data for training
-train_data, temp_data = train_test_split(data, test_size=0.3, random_state=42)
+final_train = pd.DataFrame()
+final_valid = pd.DataFrame()
+final_test = pd.DataFrame()
 
-# If any labels have only 1 sample in temp_data, then split without stratification, else stratify
-if any(temp_data['label'].value_counts() < 2):
-    valid_data, test_data = train_test_split(temp_data, test_size=0.5, random_state=42)
-else:
-    valid_data, test_data = train_test_split(temp_data, test_size=0.5, stratify=temp_data['label'], random_state=42)
+for label, count in value_counts.items():
+    if label not in to_remove:
+        temp = data[data['label'] == label]
+        
+        if count < 10:
+            # If count is less than 10, allocate one sample each to validation and test sets
+            train, temp = train_test_split(temp, test_size=2, random_state=42)
+            valid, test = train_test_split(temp, test_size=1, random_state=42)
+        else:
+            # Split in the ratio of 8:1:1
+            train, temp = train_test_split(temp, test_size=0.2, random_state=42)
+            valid, test = train_test_split(temp, test_size=0.5, random_state=42)
+            
+        final_train = pd.concat([final_train, train], ignore_index=True)
+        final_valid = pd.concat([final_valid, valid], ignore_index=True)
+        final_test = pd.concat([final_test, test], ignore_index=True)
 
-# Save the splits to CSV files
-train_data.to_csv('/home/zheng/VATN/completed1/train.csv', index=False)
-valid_data.to_csv('/home/zheng/VATN/completed1/valid.csv', index=False)
-test_data.to_csv('/home/zheng/VATN/completed1/test.csv', index=False)
+# Save to CSV files
+final_train.to_csv('/home/zheng/VATN/completed1/train.csv', index=False)
+final_valid.to_csv('/home/zheng/VATN/completed1/valid.csv', index=False)
+final_test.to_csv('/home/zheng/VATN/completed1/test.csv', index=False)
+
+# Reload and count labels
+final_train_reloaded = pd.read_csv('/home/zheng/VATN/completed1/train.csv')
+final_valid_reloaded = pd.read_csv('/home/zheng/VATN/completed1/valid.csv')
+final_test_reloaded = pd.read_csv('/home/zheng/VATN/completed1/test.csv')
+
+count_labels(final_train_reloaded, 'train.csv')
+count_labels(final_valid_reloaded, 'valid.csv')
+count_labels(final_test_reloaded, 'test.csv')

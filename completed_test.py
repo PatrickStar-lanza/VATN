@@ -21,7 +21,11 @@ model.load_state_dict(torch.load(checkpoint_path))
 test_df = pd.read_csv('/home/zheng/VATN/completed1/111.csv')
 test_files = [os.path.join("/home/zheng/VATN/action_pkl_completed", fname) for fname in test_df.iloc[:, 0].values]
 action_names = sorted(list(set(test_df.iloc[:, 1].values)))
+num_action_classes = len(action_names)
 
+model = Semi_Transformer(num_classes=num_action_classes, seq_len=30).to(device)  # Change num_classes based on your setup
+model = model.half()
+model.load_state_dict(torch.load(checkpoint_path))
 # Initialize variables to store results during the test phase
 test_running_loss = 0.0
 correct_predictions = 0

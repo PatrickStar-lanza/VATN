@@ -10,7 +10,7 @@ from tqdm import tqdm, trange
 import gzip
 
 # Initialize logging
-logging.basicConfig(filename="training_log.txt", level=logging.INFO, format='%(asctime)s %(message)s', datefmt='%m/%d/%Y %I:%M:%S %p')
+logging.basicConfig(filename="training_log3.txt", level=logging.INFO, format='%(asctime)s %(message)s', datefmt='%m/%d/%Y %I:%M:%S %p')
 
 # Function to log and print
 def log_and_print(message):
@@ -27,7 +27,7 @@ def save_checkpoint(model, path, epoch):
 device = torch.device("cuda")
 criterion = nn.CrossEntropyLoss()
 num_epochs = 40
-
+start_epoch = 0
 # Load data
 train_df = pd.read_csv('/home/zheng/VATN/completed1/train.csv')
 train_files = [os.path.join("/home/zheng/VATN/action_pkl_completed", fname) for fname in train_df.iloc[:, 0].values]
@@ -36,7 +36,7 @@ num_action_classes = len(action_names)
 
 # Initialize model and optimizer
 model = Semi_Transformer(num_classes=num_action_classes, seq_len=30).to(device)
-optimizer = torch.optim.Adam(model.parameters(), lr=0.00005, weight_decay=5e-5)
+optimizer = torch.optim.Adam(model.parameters(), lr=0.00008, weight_decay=8e-5)
 scaler = GradScaler()
 
 # Function to get accuracy
@@ -67,13 +67,13 @@ def run_training_phase(model, data_files, labels, epoch):
     epoch_acc = running_acc / len(data_files)
     log_and_print(f"Epoch {epoch}/{num_epochs} - Training Loss: {epoch_loss:.4f}, Training Accuracy: {epoch_acc:.4f}")
 
-checkpoint_base_path = "/proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed2/model"
+checkpoint_base_path = "/proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed3/model"
 
 # Define an initial checkpoint path (update this path if you have a pre-existing model)
 initial_checkpoint_path = None #"/home/zheng/VATN/checkpoints/model_epoch_13.pth"
 
 # Check if an initial checkpoint exists
-start_epoch = 0
+
 if initial_checkpoint_path:
     if os.path.exists(initial_checkpoint_path):
         log_and_print(f"Loading model from {initial_checkpoint_path}")

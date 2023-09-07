@@ -8,54 +8,66 @@ from transformer_v3_1 import Semi_Transformer  # Make sure this module is in you
 from tqdm import tqdm
 import gzip
 
+def log_and_print(msg, log_file):
+    print(msg)
+    log_file.write(msg + "\n")
+
 device = torch.device("cuda")
 
-# Load the saved model parameters
-checkpoint_path = "/home/zheng/VATN/checkpoints/last_epoch_model.pth"
-print(f"Loading model from {checkpoint_path}")
-model = Semi_Transformer(num_classes=11, seq_len=30).to(device)  # Change num_classes based on your setup
-model = model.half() 
-model.load_state_dict(torch.load(checkpoint_path))
+# Define the epoch where you want to start
+start_epoch = 14  # You can change this value
 
-# Load data and labels
-val_df = pd.read_csv('/home/zheng/VATN/completed1/111.csv')
-val_files = [os.path.join("/home/zheng/VATN/action_pkl_completed", fname) for fname in val_df.iloc[:, 0].values]
-action_names = sorted(list(set(val_df.iloc[:, 1].values)))
-num_action_classes = len(action_names)
+# Open the log file
+with open("valid_log.txt", "a") as log_file:
 
-# Define the loss function
-criterion = nn.CrossEntropyLoss()
+    # Load data and labels
+    val_df = pd.read_csv('/home/zheng/VATN/completed1/valid.csv')
+    val_files = [os.path.join("/home/zheng/VATN/action_pkl_completed", fname) for fname in val_df.iloc[:, 0].values]
+    action_names = sorted(list(set(val_df.iloc[:, 1].values)))
+    num_action_classes = len(action_names)
 
-# Initialize variables to store results during the validation phase
-val_running_loss = 0.0
-correct_predictions = 0
+    # Initialize the model and loss function
+    model = Semi_Transformer(num_classes=num_action_classes, seq_len=30).to(device)  
+    model = model.half()
+    criterion = nn.CrossEntropyLoss()
 
-# Start the validation phase
-for pkl_file, label in tqdm(zip(val_files, val_df.iloc[:, 1].values), total=len(val_files), desc="Validation Phase"):
-    with gzip.open(pkl_file, 'rb') as f:
-        clip = pickle.load(f).unsqueeze(0).to(device)
+    # Dictionary to store validation results
+    val_results = {}
 
-    action_idx = action_names.index(label)
-    action = torch.tensor([action_idx], device=device)
+    # Loop over epochs starting from start_epoch to 10
+    for epoch in range(start_epoch, 28):  # Modify the range here
+        checkpoint_path = f"/proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed2/model_epoch_{epoch}.pth"
+        log_and_print(f"Loading model from {checkpoint_path}", log_file)
+        model.load_state_dict(torch.load(checkpoint_path))
 
-    # We don't use autocast and scaler here since we don't do backpropagation
-    with torch.no_grad():  # Ensure that gradients are not computed during validation
-        outputs = model(clip)
-        loss = criterion(outputs, action)
+        # Initialize variables to store results during the validation phase
+        val_running_loss = 0.0
+        correct_predictions = 0
 
-    val_running_loss += loss.item()
+        # Start the validation phase
+        for pkl_file, label in tqdm(zip(val_files, val_df.iloc[:, 1].values), total=len(val_files), desc=f"Validation Phase (Epoch {epoch})"):
+            with gzip.open(pkl_file, 'rb') as f:
+                clip = pickle.load(f).unsqueeze(0).to(device)
 
-    # Compute predicted label and update the number of correct predictions
-    _, preds = torch.max(outputs, dim=1)
-    pred_idx = preds.item()
-    if pred_idx == action_idx:
-        correct_predictions += 1
+            action_idx = action_names.index(label)
+            action = torch.tensor([action_idx], device=device)
 
-    print(f"Validation: action_idx:{action_idx}, pred_idx:{pred_idx}")
-    print(f"Validation: True label: {label}, Predicted label: {action_names[pred_idx]}")
+            with torch.no_grad():
+                outputs = model(clip)
+                loss = criterion(outputs, action)
 
-# Compute and display the total loss and accuracy for the validation phase
-val_epoch_loss = val_running_loss / len(val_files)
-val_epoch_acc = correct_predictions / len(val_files)
+            val_running_loss += loss.item()
 
-print(f"Validation Loss: {val_epoch_loss:.4f}, Validation Accuracy: {val_epoch_acc:.4f}")
+            _, preds = torch.max(outputs, dim=1)
+            pred_idx = preds.item()
+            if pred_idx == action_idx:
+                correct_predictions += 1
+
+        val_epoch_loss = val_running_loss / len(val_files)
+        val_epoch_acc = correct_predictions / len(val_files)
+        log_and_print(f"Validation Loss (Epoch {epoch}): {val_epoch_loss:.4f}, Validation Accuracy (Epoch {epoch}): {val_epoch_acc:.4f}", log_file)
+
+        val_results[epoch] = {'Loss': val_epoch_loss, 'Accuracy': val_epoch_acc}
+
+    with open("validation_results.pkl", "wb") as f:
+        pickle.dump(val_results, f)
