@@ -1,4 +1,6 @@
+
 optimizer = torch.optim.Adam(model.parameters(), lr=0.00001, weight_decay=1e-5)
+
 Loading model from /home/zheng/VATN/checkpoints/model_epoch_0.pth
 Validation Loss (Epoch 0): 4.0920, Validation Accuracy (Epoch 0): 0.1385
 Loading model from /home/zheng/VATN/checkpoints/model_epoch_1.pth
@@ -61,3 +63,275 @@ Validation Loss (Epoch 27): 4.0957, Validation Accuracy (Epoch 27): 0.0327
 
 
 optimizer = torch.optim.Adam(model.parameters(), lr=0.00005, weight_decay=5e-5)
+
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed2/model_epoch_0.pth
+Validation Loss (Epoch 0): 4.0899, Validation Accuracy (Epoch 0): 0.1072
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed2/model_epoch_1.pth
+Validation Loss (Epoch 1): 4.0882, Validation Accuracy (Epoch 1): 0.1094
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed2/model_epoch_2.pth
+Validation Loss (Epoch 2): 4.0889, Validation Accuracy (Epoch 2): 0.1151
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed2/model_epoch_3.pth
+Validation Loss (Epoch 3): 4.0889, Validation Accuracy (Epoch 3): 0.1264
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed2/model_epoch_4.pth
+Validation Loss (Epoch 4): 4.0889, Validation Accuracy (Epoch 4): 0.1037
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed2/model_epoch_5.pth
+Validation Loss (Epoch 5): 4.0901, Validation Accuracy (Epoch 5): 0.0696
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed2/model_epoch_6.pth
+Validation Loss (Epoch 6): 4.0905, Validation Accuracy (Epoch 6): 0.0611
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed2/model_epoch_7.pth
+Validation Loss (Epoch 7): 4.0909, Validation Accuracy (Epoch 7): 0.0696
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed2/model_epoch_8.pth
+Validation Loss (Epoch 8): 4.0910, Validation Accuracy (Epoch 8): 0.0696
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed2/model_epoch_9.pth
+Validation Loss (Epoch 9): 4.0910, Validation Accuracy (Epoch 9): 0.0696
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed2/model_epoch_10.pth
+Validation Loss (Epoch 10): 4.0914, Validation Accuracy (Epoch 10): 0.0696
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed2/model_epoch_11.pth
+Validation Loss (Epoch 11): 4.0917, Validation Accuracy (Epoch 11): 0.0696
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed2/model_epoch_12.pth
+Validation Loss (Epoch 12): 4.0916, Validation Accuracy (Epoch 12): 0.0696
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed2/model_epoch_13.pth
+Validation Loss (Epoch 13): 4.0920, Validation Accuracy (Epoch 13): 0.0696
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed2/model_epoch_14.pth
+Validation Loss (Epoch 14): 4.0920, Validation Accuracy (Epoch 14): 0.0696
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed2/model_epoch_15.pth
+Validation Loss (Epoch 15): 4.0921, Validation Accuracy (Epoch 15): 0.0696
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed2/model_epoch_16.pth
+Validation Loss (Epoch 16): 4.0921, Validation Accuracy (Epoch 16): 0.0696
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed2/model_epoch_17.pth
+Validation Loss (Epoch 17): 4.0924, Validation Accuracy (Epoch 17): 0.0696
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed2/model_epoch_18.pth
+Validation Loss (Epoch 18): 4.0921, Validation Accuracy (Epoch 18): 0.0362
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed2/model_epoch_19.pth
+Validation Loss (Epoch 19): 4.0924, Validation Accuracy (Epoch 19): 0.0696
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed2/model_epoch_20.pth
+Validation Loss (Epoch 20): 4.0917, Validation Accuracy (Epoch 20): 0.0462
+
+optimizer = torch.optim.Adam(model.parameters(), lr=0.00001, weight_decay=1e-4)
+
+	Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed5/model_epoch_0.pth
+Validation Loss (Epoch 0): 4.0928, Validation Accuracy (Epoch 0): 0.1257
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed5/model_epoch_1.pth
+Validation Loss (Epoch 1): 4.0929, Validation Accuracy (Epoch 1): 0.1122
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed5/model_epoch_2.pth
+Validation Loss (Epoch 2): 4.0924, Validation Accuracy (Epoch 2): 0.1037
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed5/model_epoch_3.pth
+Validation Loss (Epoch 3): 4.0923, Validation Accuracy (Epoch 3): 0.1115
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed5/model_epoch_4.pth
+Validation Loss (Epoch 4): 4.0909, Validation Accuracy (Epoch 4): 0.1072
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed5/model_epoch_5.pth
+Validation Loss (Epoch 5): 4.0902, Validation Accuracy (Epoch 5): 0.1072
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed5/model_epoch_6.pth
+Validation Loss (Epoch 6): 4.0892, Validation Accuracy (Epoch 6): 0.1271
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed5/model_epoch_7.pth
+Validation Loss (Epoch 7): 4.0885, Validation Accuracy (Epoch 7): 0.1385
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed5/model_epoch_8.pth
+Validation Loss (Epoch 8): 4.0877, Validation Accuracy (Epoch 8): 0.1385
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed5/model_epoch_9.pth
+Validation Loss (Epoch 9): 4.0874, Validation Accuracy (Epoch 9): 0.1385
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed5/model_epoch_10.pth
+Validation Loss (Epoch 10): 4.0869, Validation Accuracy (Epoch 10): 0.1385
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed5/model_epoch_11.pth
+Validation Loss (Epoch 11): 4.0866, Validation Accuracy (Epoch 11): 0.1385
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed5/model_epoch_12.pth
+Validation Loss (Epoch 12): 4.0865, Validation Accuracy (Epoch 12): 0.1385
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed5/model_epoch_13.pth
+Validation Loss (Epoch 13): 4.0853, Validation Accuracy (Epoch 13): 0.1371
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed5/model_epoch_14.pth
+Validation Loss (Epoch 14): 4.0858, Validation Accuracy (Epoch 14): 0.1385
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed5/model_epoch_15.pth
+Validation Loss (Epoch 15): 4.0855, Validation Accuracy (Epoch 15): 0.1385
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed5/model_epoch_16.pth
+Validation Loss (Epoch 16): 4.0843, Validation Accuracy (Epoch 16): 0.1392
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed5/model_epoch_17.pth
+Validation Loss (Epoch 17): 4.0844, Validation Accuracy (Epoch 17): 0.1385
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed5/model_epoch_18.pth
+Validation Loss (Epoch 18): 4.0835, Validation Accuracy (Epoch 18): 0.1179
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed5/model_epoch_19.pth
+Validation Loss (Epoch 19): 4.0840, Validation Accuracy (Epoch 19): 0.1307
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed5/model_epoch_20.pth
+Validation Loss (Epoch 20): 4.0840, Validation Accuracy (Epoch 20): 0.1065
+
+optimizer = torch.optim.Adam(model.parameters(), lr=0.00001, weight_decay=1e-3)
+
+
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed6/model_epoch_0.pth
+Validation Loss (Epoch 0): 4.0938, Validation Accuracy (Epoch 0): 0.1278
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed6/model_epoch_1.pth
+Validation Loss (Epoch 1): 4.0938, Validation Accuracy (Epoch 1): 0.1385
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed6/model_epoch_2.pth
+Validation Loss (Epoch 2): 4.0932, Validation Accuracy (Epoch 2): 0.1385
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed6/model_epoch_3.pth
+Validation Loss (Epoch 3): 4.0932, Validation Accuracy (Epoch 3): 0.1385
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed6/model_epoch_4.pth
+Validation Loss (Epoch 4): 4.0932, Validation Accuracy (Epoch 4): 0.1385
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed6/model_epoch_5.pth
+Validation Loss (Epoch 5): 4.0928, Validation Accuracy (Epoch 5): 0.1385
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed6/model_epoch_6.pth
+Validation Loss (Epoch 6): 4.0928, Validation Accuracy (Epoch 6): 0.1385
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed6/model_epoch_7.pth
+Validation Loss (Epoch 7): 4.0928, Validation Accuracy (Epoch 7): 0.1385
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed6/model_epoch_8.pth
+Validation Loss (Epoch 8): 4.0924, Validation Accuracy (Epoch 8): 0.1385
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed6/model_epoch_9.pth
+Validation Loss (Epoch 9): 4.0928, Validation Accuracy (Epoch 9): 0.1385
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed6/model_epoch_10.pth
+Validation Loss (Epoch 10): 4.0928, Validation Accuracy (Epoch 10): 0.1385
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed6/model_epoch_11.pth
+Validation Loss (Epoch 11): 4.0928, Validation Accuracy (Epoch 11): 0.1385
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed6/model_epoch_12.pth
+Validation Loss (Epoch 12): 4.0932, Validation Accuracy (Epoch 12): 0.1385
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed6/model_epoch_13.pth
+Validation Loss (Epoch 13): 4.0930, Validation Accuracy (Epoch 13): 0.1385
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed6/model_epoch_14.pth
+Validation Loss (Epoch 14): 4.0927, Validation Accuracy (Epoch 14): 0.1385
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed6/model_epoch_15.pth
+Validation Loss (Epoch 15): 4.0927, Validation Accuracy (Epoch 15): 0.1385
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed6/model_epoch_16.pth
+Validation Loss (Epoch 16): 4.0927, Validation Accuracy (Epoch 16): 0.1385
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed6/model_epoch_17.pth
+Validation Loss (Epoch 17): 4.0927, Validation Accuracy (Epoch 17): 0.1385
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed6/model_epoch_18.pth
+Validation Loss (Epoch 18): 4.0927, Validation Accuracy (Epoch 18): 0.1385
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed6/model_epoch_19.pth
+Validation Loss (Epoch 19): 4.0927, Validation Accuracy (Epoch 19): 0.1385
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed6/model_epoch_20.pth
+Validation Loss (Epoch 20): 4.0921, Validation Accuracy (Epoch 20): 0.1385
+
+lr=0.00003, weight_decay=1e-5
+
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed8/model_epoch_0.pth
+Validation Loss (Epoch 0): 4.0911, Validation Accuracy (Epoch 0): 0.1385
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed8/model_epoch_1.pth
+Validation Loss (Epoch 1): 4.0879, Validation Accuracy (Epoch 1): 0.0916
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed8/model_epoch_2.pth
+Validation Loss (Epoch 2): 4.0838, Validation Accuracy (Epoch 2): 0.1065
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed8/model_epoch_3.pth
+Validation Loss (Epoch 3): 4.0841, Validation Accuracy (Epoch 3): 0.1179
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed8/model_epoch_4.pth
+Validation Loss (Epoch 4): 4.0868, Validation Accuracy (Epoch 4): 0.0710
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed8/model_epoch_5.pth
+Validation Loss (Epoch 5): 4.0891, Validation Accuracy (Epoch 5): 0.0746
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed8/model_epoch_6.pth
+Validation Loss (Epoch 6): 4.0902, Validation Accuracy (Epoch 6): 0.0710
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed8/model_epoch_7.pth
+Validation Loss (Epoch 7): 4.0904, Validation Accuracy (Epoch 7): 0.0902
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed8/model_epoch_8.pth
+Validation Loss (Epoch 8): 4.0912, Validation Accuracy (Epoch 8): 0.0952
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed8/model_epoch_9.pth
+Validation Loss (Epoch 9): 4.0935, Validation Accuracy (Epoch 9): 0.0263
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed8/model_epoch_10.pth
+Validation Loss (Epoch 10): 4.0917, Validation Accuracy (Epoch 10): 0.0455
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed8/model_epoch_11.pth
+Validation Loss (Epoch 11): 4.0924, Validation Accuracy (Epoch 11): 0.0433
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed8/model_epoch_12.pth
+Validation Loss (Epoch 12): 4.0941, Validation Accuracy (Epoch 12): 0.0369
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed8/model_epoch_13.pth
+Validation Loss (Epoch 13): 4.0938, Validation Accuracy (Epoch 13): 0.0220
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed8/model_epoch_14.pth
+Validation Loss (Epoch 14): 4.0941, Validation Accuracy (Epoch 14): 0.0227
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed8/model_epoch_15.pth
+Validation Loss (Epoch 15): 4.0936, Validation Accuracy (Epoch 15): 0.0810
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed8/model_epoch_16.pth
+Validation Loss (Epoch 16): 4.0919, Validation Accuracy (Epoch 16): 0.0760
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed8/model_epoch_17.pth
+Validation Loss (Epoch 17): 4.0936, Validation Accuracy (Epoch 17): 0.0149
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed8/model_epoch_18.pth
+Validation Loss (Epoch 18): 4.0932, Validation Accuracy (Epoch 18): 0.0632
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed8/model_epoch_19.pth
+Validation Loss (Epoch 19): 4.0926, Validation Accuracy (Epoch 19): 0.0625
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed8/model_epoch_20.pth
+Validation Loss (Epoch 20): 4.0919, Validation Accuracy (Epoch 20): 0.1094
+
+lr=0.00008, weight_decay=1e-5
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed10/model_epoch_0.pth
+Validation Loss (Epoch 0): 4.0837, Validation Accuracy (Epoch 0): 0.1243
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed10/model_epoch_1.pth
+Validation Loss (Epoch 1): 4.0836, Validation Accuracy (Epoch 1): 0.0788
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed10/model_epoch_2.pth
+Validation Loss (Epoch 2): 4.0884, Validation Accuracy (Epoch 2): 0.0391
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed10/model_epoch_3.pth
+Validation Loss (Epoch 3): 4.0897, Validation Accuracy (Epoch 3): 0.0355
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed10/model_epoch_4.pth
+Validation Loss (Epoch 4): 4.0897, Validation Accuracy (Epoch 4): 0.0589
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed10/model_epoch_5.pth
+Validation Loss (Epoch 5): 4.0902, Validation Accuracy (Epoch 5): 0.0426
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed10/model_epoch_6.pth
+Validation Loss (Epoch 6): 4.0919, Validation Accuracy (Epoch 6): 0.0249
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed10/model_epoch_7.pth
+Validation Loss (Epoch 7): 4.0915, Validation Accuracy (Epoch 7): 0.0312
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed10/model_epoch_8.pth
+Validation Loss (Epoch 8): 4.0931, Validation Accuracy (Epoch 8): 0.0298
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed10/model_epoch_9.pth
+Validation Loss (Epoch 9): 4.0933, Validation Accuracy (Epoch 9): 0.0376
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed10/model_epoch_10.pth
+Validation Loss (Epoch 10): 4.0947, Validation Accuracy (Epoch 10): 0.0192
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed10/model_epoch_11.pth
+Validation Loss (Epoch 11): 4.0960, Validation Accuracy (Epoch 11): 0.0178
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed10/model_epoch_12.pth
+Validation Loss (Epoch 12): 4.0965, Validation Accuracy (Epoch 12): 0.0220
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed10/model_epoch_13.pth
+Validation Loss (Epoch 13): 4.0971, Validation Accuracy (Epoch 13): 0.0178
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed10/model_epoch_14.pth
+Validation Loss (Epoch 14): 4.0970, Validation Accuracy (Epoch 14): 0.0391
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed10/model_epoch_15.pth
+Validation Loss (Epoch 15): 4.1000, Validation Accuracy (Epoch 15): 0.0057
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed10/model_epoch_16.pth
+Validation Loss (Epoch 16): 4.0962, Validation Accuracy (Epoch 16): 0.0277
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed10/model_epoch_17.pth
+Validation Loss (Epoch 17): 4.1005, Validation Accuracy (Epoch 17): 0.0036
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed10/model_epoch_18.pth
+Validation Loss (Epoch 18): 4.1002, Validation Accuracy (Epoch 18): 0.0107
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed10/model_epoch_19.pth
+Validation Loss (Epoch 19): 4.1000, Validation Accuracy (Epoch 19): 0.0192
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed10/model_epoch_20.pth
+Validation Loss (Epoch 20): 4.1014, Validation Accuracy (Epoch 20): 0.0192
+Loading model from /home/zheng/VATN/checkpoints/model_epoch_4.pth
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed/model_epoch_4.pth
+
+Tail类的forward方法中，去除F.softmax：
+
+
+
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/structure_compare/model_epoch_0.pth
+Validation Loss (Epoch 0): 4.0382, Validation Accuracy (Epoch 0): 0.1072
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/structure_compare/model_epoch_1.pth
+Validation Loss (Epoch 1): 3.9839, Validation Accuracy (Epoch 1): 0.1378
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/structure_compare/model_epoch_2.pth
+Validation Loss (Epoch 2): 3.9247, Validation Accuracy (Epoch 2): 0.1385
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/structure_compare/model_epoch_3.pth
+Validation Loss (Epoch 3): 3.8841, Validation Accuracy (Epoch 3): 0.1385
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/structure_compare/model_epoch_4.pth
+Validation Loss (Epoch 4): 3.8531, Validation Accuracy (Epoch 4): 0.1385
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/structure_compare/model_epoch_5.pth
+Validation Loss (Epoch 5): 3.8496, Validation Accuracy (Epoch 5): 0.1385
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/structure_compare/model_epoch_6.pth
+Validation Loss (Epoch 6): 3.8355, Validation Accuracy (Epoch 6): 0.1385
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/structure_compare/model_epoch_7.pth
+Validation Loss (Epoch 7): 3.8039, Validation Accuracy (Epoch 7): 0.1385
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/structure_compare/model_epoch_8.pth
+Validation Loss (Epoch 8): 3.8152, Validation Accuracy (Epoch 8): 0.1378
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/structure_compare/model_epoch_9.pth
+Validation Loss (Epoch 9): 3.7945, Validation Accuracy (Epoch 9): 0.1385
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/structure_compare/model_epoch_10.pth
+Validation Loss (Epoch 10): 3.8133, Validation Accuracy (Epoch 10): 0.1378
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/structure_compare/model_epoch_11.pth
+Validation Loss (Epoch 11): 3.8286, Validation Accuracy (Epoch 11): 0.1385
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/structure_compare/model_epoch_12.pth
+Validation Loss (Epoch 12): 3.8221, Validation Accuracy (Epoch 12): 0.1378
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/structure_compare/model_epoch_13.pth
+Validation Loss (Epoch 13): 3.8101, Validation Accuracy (Epoch 13): 0.1385
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/structure_compare/model_epoch_14.pth
+Validation Loss (Epoch 14): 3.8211, Validation Accuracy (Epoch 14): 0.1378
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/structure_compare/model_epoch_15.pth
+Validation Loss (Epoch 15): 3.8290, Validation Accuracy (Epoch 15): 0.1378
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/structure_compare/model_epoch_16.pth
+Validation Loss (Epoch 16): 3.8347, Validation Accuracy (Epoch 16): 0.1385
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/structure_compare/model_epoch_17.pth
+Validation Loss (Epoch 17): 3.8318, Validation Accuracy (Epoch 17): 0.1385
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/structure_compare/model_epoch_18.pth
+Validation Loss (Epoch 18): 3.8258, Validation Accuracy (Epoch 18): 0.1378
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/structure_compare/model_epoch_19.pth
+Validation Loss (Epoch 19): 3.8323, Validation Accuracy (Epoch 19): 0.1378
+Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/structure_compare/model_epoch_20.pth
+Validation Loss (Epoch 20): 3.8156, Validation Accuracy (Epoch 20): 0.1364

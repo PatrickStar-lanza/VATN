@@ -4,7 +4,7 @@ import torch
 import pickle
 from torch import nn
 import pandas as pd
-from transformer_v3_2 import Semi_Transformer  # Make sure this module is in your path
+from transformer_v3_3 import Semi_Transformer  # Make sure this module is in your path
 from tqdm import tqdm
 import gzip
 
@@ -18,7 +18,7 @@ device = torch.device("cuda")
 start_epoch = 0  # You can change this value
 end_epoch = 21
 # Open the log file
-with open("valid_log.txt", "a") as log_file:
+with open("valid_log3.txt", "a") as log_file:
 
     # Load data and labels
     val_df = pd.read_csv('/home/zheng/VATN/completed1/valid.csv')
@@ -36,7 +36,7 @@ with open("valid_log.txt", "a") as log_file:
 
     # Loop over epochs starting from start_epoch to 10
     for epoch in range(start_epoch, end_epoch):  # Modify the range here
-        checkpoint_path = f"/proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/structure_compare/model_epoch_{epoch}.pth"
+        checkpoint_path = f"/proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/structure_compare1/model_epoch_{epoch}.pth"
         log_and_print(f"Loading model from {checkpoint_path}", log_file)
         model.load_state_dict(torch.load(checkpoint_path))
 

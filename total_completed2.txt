@@ -1,2712 +1,0 @@
-/home/zheng/miniconda3/envs/prepro_np1.20/lib/python3.8/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
-  warnings.warn(
-/home/zheng/miniconda3/envs/prepro_np1.20/lib/python3.8/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=ResNet50_Weights.IMAGENET1K_V1`. You can also use `weights=ResNet50_Weights.DEFAULT` to get the most up-to-date weights.
-  warnings.warn(msg)
-Number of action classes: 11
-Action classes: ['add', 'change', 'close', 'dry', 'move', 'pull', 'rip', 'screw', 'spread', 'take', 'wash']
-Training Epochs:   0%|          | 0/10 [00:00<?, ?it/s]train Phase:   0%|          | 0/32 [00:00<?, ?it/s]train Phase:   3%|▎         | 1/32 [00:00<00:27,  1.12it/s]train Phase:   6%|▋         | 2/32 [00:01<00:14,  2.14it/s]train Phase:   9%|▉         | 3/32 [00:01<00:09,  3.10it/s]train Phase:  12%|█▎        | 4/32 [00:01<00:07,  3.93it/s]train Phase:  16%|█▌        | 5/32 [00:01<00:05,  4.51it/s]train Phase:  19%|█▉        | 6/32 [00:01<00:05,  5.08it/s]train Phase:  22%|██▏       | 7/32 [00:01<00:04,  5.49it/s]train Phase:  25%|██▌       | 8/32 [00:01<00:04,  5.67it/s]train Phase:  28%|██▊       | 9/32 [00:02<00:03,  5.81it/s]train Phase:  31%|███▏      | 10/32 [00:02<00:03,  6.05it/s]train Phase:  34%|███▍      | 11/32 [00:02<00:03,  6.07it/s]train Phase:  38%|███▊      | 12/32 [00:02<00:03,  6.28it/s]train Phase:  41%|████      | 13/32 [00:02<00:03,  6.31it/s]train Phase:  44%|████▍     | 14/32 [00:02<00:02,  6.34it/s]train Phase:  47%|████▋     | 15/32 [00:03<00:02,  6.49it/s]train Phase:  50%|█████     | 16/32 [00:03<00:02,  6.39it/s]train Phase:  53%|█████▎    | 17/32 [00:03<00:02,  6.43it/s]train Phase:  56%|█████▋    | 18/32 [00:03<00:03,  3.90it/s]train Phase:  59%|█████▉    | 19/32 [00:04<00:05,  2.38it/s]train Phase:  62%|██████▎   | 20/32 [00:05<00:04,  2.56it/s]train Phase:  66%|██████▌   | 21/32 [00:05<00:04,  2.39it/s]train Phase:  69%|██████▉   | 22/32 [00:05<00:03,  2.72it/s]train Phase:  72%|███████▏  | 23/32 [00:06<00:03,  2.68it/s]train Phase:  75%|███████▌  | 24/32 [00:06<00:02,  2.96it/s]train Phase:  78%|███████▊  | 25/32 [00:06<00:02,  3.12it/s]train Phase:  81%|████████▏ | 26/32 [00:06<00:01,  3.16it/s]train Phase:  84%|████████▍ | 27/32 [00:07<00:01,  3.26it/s]train Phase:  88%|████████▊ | 28/32 [00:07<00:01,  3.42it/s]train Phase:  91%|█████████ | 29/32 [00:07<00:00,  3.23it/s]train Phase:  94%|█████████▍| 30/32 [00:08<00:00,  3.65it/s]train Phase:  97%|█████████▋| 31/32 [00:08<00:00,  3.72it/s]train Phase: 100%|██████████| 32/32 [00:08<00:00,  3.60it/s]train Phase: 100%|██████████| 32/32 [00:08<00:00,  3.72it/s]
-Epoch 1/10 - train Loss: 2.3949, train Accuracy: 0.3750
-val Phase:   0%|          | 0/32 [00:00<?, ?it/s]val Phase:   6%|▋         | 2/32 [00:00<00:01, 15.47it/s]val Phase:  12%|█▎        | 4/32 [00:00<00:01, 17.18it/s]val Phase:  19%|█▉        | 6/32 [00:00<00:01, 16.78it/s]val Phase:  25%|██▌       | 8/32 [00:00<00:01, 15.44it/s]val Phase:  31%|███▏      | 10/32 [00:00<00:01, 15.77it/s]val Phase:  38%|███▊      | 12/32 [00:00<00:01, 15.54it/s]val Phase:  44%|████▍     | 14/32 [00:00<00:01, 14.47it/s]val Phase:  50%|█████     | 16/32 [00:01<00:01, 14.18it/s]val Phase:  56%|█████▋    | 18/32 [00:01<00:00, 14.95it/s]val Phase:  62%|██████▎   | 20/32 [00:01<00:00, 15.44it/s]val Phase:  69%|██████▉   | 22/32 [00:01<00:00, 15.97it/s]val Phase:  75%|███████▌  | 24/32 [00:01<00:00, 16.73it/s]val Phase:  81%|████████▏ | 26/32 [00:01<00:00, 16.93it/s]val Phase:  88%|████████▊ | 28/32 [00:01<00:00, 17.13it/s]val Phase:  94%|█████████▍| 30/32 [00:01<00:00, 16.93it/s]val Phase: 100%|██████████| 32/32 [00:01<00:00, 16.81it/s]val Phase: 100%|██████████| 32/32 [00:01<00:00, 16.04it/s]
-Training Epochs:  10%|█         | 1/10 [00:10<01:35, 10.60s/it]Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0040,  0.0140, -0.0037,  ..., -0.0217, -0.0235, -0.0215],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.917965412139893
-Predicted indices: tensor([378], device='cuda:0')
-Max values: tensor([0.1375], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 378 default is 0
-True label: change, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-0.0175,  0.0292,  0.0149,  ..., -0.0180, -0.0181,  0.0052],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.954975128173828
-Predicted indices: tensor([413], device='cuda:0')
-Max values: tensor([0.1530], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 413 default is 0
-True label: spread, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0288,  0.0367, -0.0250,  ..., -0.0164, -0.0187, -0.0065],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.95646858215332
-Predicted indices: tensor([822], device='cuda:0')
-Max values: tensor([0.1575], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 822 default is 0
-True label: move, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0208,  0.0264, -0.0108,  ..., -0.0213, -0.0233, -0.0042],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.928898334503174
-Predicted indices: tensor([822], device='cuda:0')
-Max values: tensor([0.1485], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 822 default is 0
-True label: rip, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-0.0192, -0.0121,  0.0001,  ..., -0.0225, -0.0224, -0.0220],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.954440593719482
-Predicted indices: tensor([417], device='cuda:0')
-Max values: tensor([0.1479], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 417 default is 0
-True label: take, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0254,  0.0431, -0.0084,  ..., -0.0173, -0.0192, -0.0174],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.953699588775635
-Predicted indices: tensor([822], device='cuda:0')
-Max values: tensor([0.1505], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 822 default is 0
-True label: pull, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-0.0034,  0.0202, -0.0315,  ..., -0.0198,  0.0019, -0.0223],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.9222588539123535
-Predicted indices: tensor([251], device='cuda:0')
-Max values: tensor([0.1317], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 251 default is 0
-True label: dry, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-0.0181, -0.0050, -0.0198,  ..., -0.0206, -0.0212,  0.0318],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.953224182128906
-Predicted indices: tensor([824], device='cuda:0')
-Max values: tensor([0.1331], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 824 default is 0
-True label: take, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-0.0155, -0.0011, -0.0196,  ..., -0.0206, -0.0163, -0.0134],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.815891265869141
-Predicted indices: tensor([554], device='cuda:0')
-Max values: tensor([0.1235], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 554 default is 0
-True label: rip, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0214,  0.0370, -0.0285,  ..., -0.0192, -0.0191, -0.0179],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.924373626708984
-Predicted indices: tensor([822], device='cuda:0')
-Max values: tensor([0.1497], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 822 default is 0
-True label: screw, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-0.0165,  0.0258,  0.0031,  ..., -0.0203, -0.0197, -0.0097],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.9454169273376465
-Predicted indices: tensor([618], device='cuda:0')
-Max values: tensor([0.1410], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 618 default is 0
-True label: wash, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0225,  0.0275, -0.0281,  ..., -0.0181, -0.0157, -0.0198],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.909517765045166
-Predicted indices: tensor([822], device='cuda:0')
-Max values: tensor([0.1450], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 822 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0044,  0.0378, -0.0244,  ..., -0.0238, -0.0258, -0.0239],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.928853988647461
-Predicted indices: tensor([22], device='cuda:0')
-Max values: tensor([0.1225], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 22 default is 0
-True label: take, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-0.0158,  0.0218,  0.0081,  ..., -0.0181, -0.0143, -0.0114],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.954220294952393
-Predicted indices: tensor([197], device='cuda:0')
-Max values: tensor([0.1736], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 197 default is 0
-True label: take, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0262,  0.0392, -0.0123,  ..., -0.0175, -0.0195, -0.0176],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.944225788116455
-Predicted indices: tensor([822], device='cuda:0')
-Max values: tensor([0.1565], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 822 default is 0
-True label: close, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-0.0126, -0.0109, -0.0161,  ..., -0.0192, -0.0194, -0.0150],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.950216770172119
-Predicted indices: tensor([720], device='cuda:0')
-Max values: tensor([0.1474], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 720 default is 0
-True label: take, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0225,  0.0275, -0.0281,  ..., -0.0181, -0.0157, -0.0198],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.909517765045166
-Predicted indices: tensor([822], device='cuda:0')
-Max values: tensor([0.1450], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 822 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-0.0077,  0.0052, -0.0076,  ..., -0.0220, -0.0197, -0.0163],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.9396538734436035
-Predicted indices: tensor([897], device='cuda:0')
-Max values: tensor([0.1425], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 897 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-0.0211,  0.0479, -0.0082,  ..., -0.0176, -0.0196, -0.0154],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.953039646148682
-Predicted indices: tensor([897], device='cuda:0')
-Max values: tensor([0.1497], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 897 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0225,  0.0328, -0.0283,  ..., -0.0141, -0.0205, -0.0185],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.909460067749023
-Predicted indices: tensor([822], device='cuda:0')
-Max values: tensor([0.1502], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 822 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0075,  0.0382,  0.0017,  ..., -0.0276, -0.0296, -0.0017],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.924442291259766
-Predicted indices: tensor([897], device='cuda:0')
-Max values: tensor([0.1204], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 897 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0237,  0.0361, -0.0284,  ..., -0.0162, -0.0197, -0.0187],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.9082441329956055
-Predicted indices: tensor([822], device='cuda:0')
-Max values: tensor([0.1498], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 822 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0213,  0.0365, -0.0252,  ..., -0.0204, -0.0224, -0.0205],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.910705089569092
-Predicted indices: tensor([822], device='cuda:0')
-Max values: tensor([0.1464], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 822 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0300,  0.0350, -0.0196,  ..., -0.0143, -0.0187, -0.0168],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.901943683624268
-Predicted indices: tensor([822], device='cuda:0')
-Max values: tensor([0.1561], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 822 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0203,  0.0262, -0.0212,  ..., -0.0201, -0.0220, -0.0157],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.911642551422119
-Predicted indices: tensor([554], device='cuda:0')
-Max values: tensor([0.1408], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 554 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0053,  0.0211,  0.0125,  ..., -0.0234, -0.0225, -0.0188],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.926687240600586
-Predicted indices: tensor([554], device='cuda:0')
-Max values: tensor([0.1459], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 554 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0122,  0.0394, -0.0283,  ..., -0.0215, -0.0241, -0.0215],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.919802665710449
-Predicted indices: tensor([554], device='cuda:0')
-Max values: tensor([0.1377], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 554 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0230,  0.0243, -0.0095,  ..., -0.0220, -0.0240, -0.0219],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.908921718597412
-Predicted indices: tensor([554], device='cuda:0')
-Max values: tensor([0.1714], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 554 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-0.0142, -0.0015, -0.0158,  ..., -0.0162, -0.0159, -0.0089],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.946154594421387
-Predicted indices: tensor([1003], device='cuda:0')
-Max values: tensor([0.1575], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 1003 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0285,  0.0382, -0.0254,  ..., -0.0163, -0.0183, -0.0164],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.903472423553467
-Predicted indices: tensor([822], device='cuda:0')
-Max values: tensor([0.1582], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 822 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0277,  0.0337, -0.0181,  ..., -0.0196, -0.0204, -0.0115],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.904317855834961
-Predicted indices: tensor([822], device='cuda:0')
-Max values: tensor([0.1543], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 822 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-0.0133, -0.0127, -0.0148,  ..., -0.0201, -0.0193,  0.0278],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.9452924728393555
-Predicted indices: tensor([6], device='cuda:0')
-Max values: tensor([0.1538], device='cuda:0', grad_fn=<MaxBackward0>)
-True label: add, Predicted label: rip
-Epoch 1/10 - val Loss: 6.9262, val Accuracy: 0.0000
-Accuracy of add : 0.00%
-Accuracy of change : 0.00%
-Accuracy of close : 0.00%
-Accuracy of dry : 0.00%
-Accuracy of move : 0.00%
-Accuracy of pull : 0.00%
-Accuracy of rip : 0.00%
-Accuracy of screw : 0.00%
-Accuracy of spread : 0.00%
-Accuracy of take : 0.00%
-Accuracy of wash : 0.00%
-train Phase:   0%|          | 0/32 [00:00<?, ?it/s]train Phase:   3%|▎         | 1/32 [00:00<00:04,  6.47it/s]train Phase:   6%|▋         | 2/32 [00:00<00:04,  6.44it/s]train Phase:   9%|▉         | 3/32 [00:00<00:04,  6.50it/s]train Phase:  12%|█▎        | 4/32 [00:00<00:04,  6.59it/s]train Phase:  16%|█▌        | 5/32 [00:00<00:04,  6.49it/s]train Phase:  19%|█▉        | 6/32 [00:00<00:03,  6.57it/s]train Phase:  22%|██▏       | 7/32 [00:01<00:03,  6.50it/s]train Phase:  25%|██▌       | 8/32 [00:01<00:03,  6.43it/s]train Phase:  28%|██▊       | 9/32 [00:01<00:03,  6.37it/s]train Phase:  31%|███▏      | 10/32 [00:01<00:03,  6.54it/s]train Phase:  34%|███▍      | 11/32 [00:01<00:03,  6.44it/s]train Phase:  38%|███▊      | 12/32 [00:01<00:03,  6.50it/s]train Phase:  41%|████      | 13/32 [00:02<00:02,  6.45it/s]train Phase:  44%|████▍     | 14/32 [00:02<00:02,  6.45it/s]train Phase:  47%|████▋     | 15/32 [00:02<00:02,  6.58it/s]train Phase:  50%|█████     | 16/32 [00:02<00:02,  6.51it/s]train Phase:  53%|█████▎    | 17/32 [00:02<00:02,  6.63it/s]train Phase:  56%|█████▋    | 18/32 [00:02<00:02,  6.59it/s]train Phase:  59%|█████▉    | 19/32 [00:02<00:02,  6.43it/s]train Phase:  62%|██████▎   | 20/32 [00:03<00:01,  6.57it/s]train Phase:  66%|██████▌   | 21/32 [00:03<00:01,  6.54it/s]train Phase:  69%|██████▉   | 22/32 [00:03<00:01,  6.66it/s]train Phase:  72%|███████▏  | 23/32 [00:03<00:01,  6.68it/s]train Phase:  75%|███████▌  | 24/32 [00:03<00:01,  6.77it/s]train Phase:  78%|███████▊  | 25/32 [00:03<00:01,  6.81it/s]train Phase:  81%|████████▏ | 26/32 [00:03<00:00,  6.73it/s]train Phase:  84%|████████▍ | 27/32 [00:04<00:00,  6.66it/s]train Phase:  88%|████████▊ | 28/32 [00:04<00:00,  6.71it/s]train Phase:  91%|█████████ | 29/32 [00:04<00:00,  6.53it/s]train Phase:  94%|█████████▍| 30/32 [00:04<00:00,  6.55it/s]train Phase:  97%|█████████▋| 31/32 [00:04<00:00,  6.66it/s]train Phase: 100%|██████████| 32/32 [00:04<00:00,  6.48it/s]train Phase: 100%|██████████| 32/32 [00:04<00:00,  6.55it/s]
-Epoch 2/10 - train Loss: 2.3857, train Accuracy: 0.7188
-val Phase:   0%|          | 0/32 [00:00<?, ?it/s]val Phase:   6%|▋         | 2/32 [00:00<00:01, 15.95it/s]val Phase:  12%|█▎        | 4/32 [00:00<00:01, 17.42it/s]val Phase:  19%|█▉        | 6/32 [00:00<00:01, 17.01it/s]val Phase:  25%|██▌       | 8/32 [00:00<00:01, 16.28it/s]val Phase:  31%|███▏      | 10/32 [00:00<00:01, 16.34it/s]val Phase:  38%|███▊      | 12/32 [00:00<00:01, 15.87it/s]val Phase:  44%|████▍     | 14/32 [00:00<00:01, 15.93it/s]val Phase:  50%|█████     | 16/32 [00:00<00:00, 16.06it/s]val Phase:  56%|█████▋    | 18/32 [00:01<00:00, 16.31it/s]val Phase:  62%|██████▎   | 20/32 [00:01<00:00, 16.40it/s]val Phase:  69%|██████▉   | 22/32 [00:01<00:00, 16.68it/s]val Phase:  75%|███████▌  | 24/32 [00:01<00:00, 17.20it/s]val Phase:  81%|████████▏ | 26/32 [00:01<00:00, 17.27it/s]val Phase:  88%|████████▊ | 28/32 [00:01<00:00, 17.35it/s]val Phase:  94%|█████████▍| 30/32 [00:01<00:00, 17.09it/s]val Phase: 100%|██████████| 32/32 [00:01<00:00, 16.90it/s]val Phase: 100%|██████████| 32/32 [00:01<00:00, 16.67it/s]
-Training Epochs:  20%|██        | 2/10 [00:17<01:06,  8.37s/it]Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-0.0009,  0.0141, -0.0232,  ..., -0.0223, -0.0241, -0.0224],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.917837619781494
-Predicted indices: tensor([31], device='cuda:0')
-Max values: tensor([0.1393], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 31 default is 0
-True label: change, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-0.0158,  0.0054, -0.0106,  ..., -0.0200, -0.0208,  0.0113],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.952911376953125
-Predicted indices: tensor([272], device='cuda:0')
-Max values: tensor([0.1556], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 272 default is 0
-True label: spread, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0060,  0.0322, -0.0229,  ..., -0.0164, -0.0184, -0.0077],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.951089859008789
-Predicted indices: tensor([487], device='cuda:0')
-Max values: tensor([0.1621], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 487 default is 0
-True label: move, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-0.0010,  0.0211, -0.0183,  ..., -0.0202, -0.0221, -0.0083],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.908488750457764
-Predicted indices: tensor([487], device='cuda:0')
-Max values: tensor([0.1451], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 487 default is 0
-True label: rip, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-0.0182, -0.0172, -0.0117,  ..., -0.0216, -0.0220, -0.0198],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.9539594650268555
-Predicted indices: tensor([914], device='cuda:0')
-Max values: tensor([0.1619], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 914 default is 0
-True label: take, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0034,  0.0357, -0.0113,  ..., -0.0172, -0.0192, -0.0173],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.954774379730225
-Predicted indices: tensor([487], device='cuda:0')
-Max values: tensor([0.1587], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 487 default is 0
-True label: pull, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0013,  0.0138, -0.0285,  ..., -0.0136, -0.0084, -0.0246],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.936857223510742
-Predicted indices: tensor([251], device='cuda:0')
-Max values: tensor([0.1472], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 251 default is 0
-True label: dry, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-0.0183, -0.0151, -0.0196,  ..., -0.0190, -0.0216,  0.0376],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.953662395477295
-Predicted indices: tensor([914], device='cuda:0')
-Max values: tensor([0.1521], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 914 default is 0
-True label: take, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-0.0142, -0.0077, -0.0188,  ..., -0.0216, -0.0223, -0.0157],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.815883636474609
-Predicted indices: tensor([937], device='cuda:0')
-Max values: tensor([0.1400], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 937 default is 0
-True label: rip, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-0.0004,  0.0263, -0.0267,  ..., -0.0193, -0.0200, -0.0190],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.939687252044678
-Predicted indices: tensor([1001], device='cuda:0')
-Max values: tensor([0.1400], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 1001 default is 0
-True label: screw, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-0.0160,  0.0215, -0.0142,  ..., -0.0225, -0.0227, -0.0183],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.936697959899902
-Predicted indices: tensor([887], device='cuda:0')
-Max values: tensor([0.1330], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 887 default is 0
-True label: wash, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-9.2861e-05,  2.2545e-02, -2.5561e-02,  ..., -1.9468e-02,
-        -1.7089e-02, -1.9704e-02], device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.932067394256592
-Predicted indices: tensor([487], device='cuda:0')
-Max values: tensor([0.1464], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 487 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-0.0094,  0.0204, -0.0250,  ..., -0.0247, -0.0266, -0.0248],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.948287010192871
-Predicted indices: tensor([293], device='cuda:0')
-Max values: tensor([0.1099], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 293 default is 0
-True label: take, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-0.0115,  0.0004,  0.0009,  ..., -0.0192, -0.0198, -0.0070],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.953422546386719
-Predicted indices: tensor([197], device='cuda:0')
-Max values: tensor([0.1652], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 197 default is 0
-True label: take, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0038,  0.0322, -0.0150,  ..., -0.0177, -0.0197, -0.0178],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.946984767913818
-Predicted indices: tensor([487], device='cuda:0')
-Max values: tensor([0.1534], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 487 default is 0
-True label: close, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-0.0001, -0.0133, -0.0164,  ..., -0.0195, -0.0199,  0.0057],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.950016498565674
-Predicted indices: tensor([720], device='cuda:0')
-Max values: tensor([0.1574], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 720 default is 0
-True label: take, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-9.2861e-05,  2.2545e-02, -2.5561e-02,  ..., -1.9468e-02,
-        -1.7089e-02, -1.9704e-02], device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.932067394256592
-Predicted indices: tensor([487], device='cuda:0')
-Max values: tensor([0.1464], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 487 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-0.0060,  0.0052, -0.0228,  ..., -0.0230, -0.0246,  0.0072],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.9379706382751465
-Predicted indices: tensor([153], device='cuda:0')
-Max values: tensor([0.1294], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 153 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-0.0189,  0.0348, -0.0136,  ..., -0.0173, -0.0194, -0.0164],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.950854301452637
-Predicted indices: tensor([351], device='cuda:0')
-Max values: tensor([0.1520], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 351 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0007,  0.0249, -0.0253,  ..., -0.0156, -0.0201, -0.0182],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.931301593780518
-Predicted indices: tensor([487], device='cuda:0')
-Max values: tensor([0.1478], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 487 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-0.0089,  0.0190,  0.0050,  ..., -0.0232, -0.0269, -0.0118],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.940915107727051
-Predicted indices: tensor([822], device='cuda:0')
-Max values: tensor([0.1127], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 822 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0012,  0.0259, -0.0249,  ..., -0.0177, -0.0198, -0.0181],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.930762767791748
-Predicted indices: tensor([487], device='cuda:0')
-Max values: tensor([0.1475], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 487 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0022,  0.0326, -0.0243,  ..., -0.0197, -0.0217, -0.0198],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.9298095703125
-Predicted indices: tensor([487], device='cuda:0')
-Max values: tensor([0.1550], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 487 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0072,  0.0316, -0.0175,  ..., -0.0158, -0.0183, -0.0163],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.924755096435547
-Predicted indices: tensor([487], device='cuda:0')
-Max values: tensor([0.1610], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 487 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-0.0005,  0.0206, -0.0213,  ..., -0.0189, -0.0209, -0.0178],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.932519435882568
-Predicted indices: tensor([487], device='cuda:0')
-Max values: tensor([0.1393], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 487 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-0.0104,  0.0140, -0.0081,  ..., -0.0237, -0.0234, -0.0235],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.942397117614746
-Predicted indices: tensor([720], device='cuda:0')
-Max values: tensor([0.1529], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 720 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-0.0050,  0.0235, -0.0258,  ..., -0.0200, -0.0233, -0.0214],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.937022686004639
-Predicted indices: tensor([554], device='cuda:0')
-Max values: tensor([0.1234], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 554 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-0.0050,  0.0167, -0.0207,  ..., -0.0220, -0.0240, -0.0221],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.93699836730957
-Predicted indices: tensor([554], device='cuda:0')
-Max values: tensor([0.1450], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 554 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-0.0158, -0.0095, -0.0180,  ..., -0.0158, -0.0169, -0.0114],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.947815895080566
-Predicted indices: tensor([960], device='cuda:0')
-Max values: tensor([0.1418], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 960 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0051,  0.0332, -0.0244,  ..., -0.0159, -0.0179, -0.0160],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.9269256591796875
-Predicted indices: tensor([487], device='cuda:0')
-Max values: tensor([0.1657], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 487 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0077,  0.0305, -0.0256,  ..., -0.0198, -0.0196, -0.0169],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.924252510070801
-Predicted indices: tensor([487], device='cuda:0')
-Max values: tensor([0.1498], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 487 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-0.0136, -0.0141, -0.0172,  ..., -0.0194, -0.0197,  0.0225],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.945611476898193
-Predicted indices: tensor([6], device='cuda:0')
-Max values: tensor([0.1606], device='cuda:0', grad_fn=<MaxBackward0>)
-True label: add, Predicted label: rip
-Epoch 2/10 - val Loss: 6.9351, val Accuracy: 0.0000
-Accuracy of add : 0.00%
-Accuracy of change : 0.00%
-Accuracy of close : 0.00%
-Accuracy of dry : 0.00%
-Accuracy of move : 0.00%
-Accuracy of pull : 0.00%
-Accuracy of rip : 0.00%
-Accuracy of screw : 0.00%
-Accuracy of spread : 0.00%
-Accuracy of take : 0.00%
-Accuracy of wash : 0.00%
-train Phase:   0%|          | 0/32 [00:00<?, ?it/s]train Phase:   3%|▎         | 1/32 [00:00<00:04,  6.45it/s]train Phase:   6%|▋         | 2/32 [00:00<00:04,  6.27it/s]train Phase:   9%|▉         | 3/32 [00:00<00:04,  6.60it/s]train Phase:  12%|█▎        | 4/32 [00:00<00:04,  6.73it/s]train Phase:  16%|█▌        | 5/32 [00:00<00:04,  6.50it/s]train Phase:  19%|█▉        | 6/32 [00:00<00:03,  6.67it/s]train Phase:  22%|██▏       | 7/32 [00:01<00:03,  6.66it/s]train Phase:  25%|██▌       | 8/32 [00:01<00:03,  6.48it/s]train Phase:  28%|██▊       | 9/32 [00:01<00:03,  6.46it/s]train Phase:  31%|███▏      | 10/32 [00:01<00:03,  6.51it/s]train Phase:  34%|███▍      | 11/32 [00:01<00:03,  6.41it/s]train Phase:  38%|███▊      | 12/32 [00:01<00:03,  6.50it/s]train Phase:  41%|████      | 13/32 [00:01<00:02,  6.50it/s]train Phase:  44%|████▍     | 14/32 [00:02<00:02,  6.49it/s]train Phase:  47%|████▋     | 15/32 [00:02<00:02,  6.53it/s]train Phase:  50%|█████     | 16/32 [00:02<00:02,  6.48it/s]train Phase:  53%|█████▎    | 17/32 [00:02<00:02,  6.49it/s]train Phase:  56%|█████▋    | 18/32 [00:02<00:02,  6.46it/s]train Phase:  59%|█████▉    | 19/32 [00:02<00:02,  6.43it/s]train Phase:  62%|██████▎   | 20/32 [00:03<00:01,  6.57it/s]train Phase:  66%|██████▌   | 21/32 [00:03<00:01,  6.59it/s]train Phase:  69%|██████▉   | 22/32 [00:03<00:01,  6.70it/s]train Phase:  72%|███████▏  | 23/32 [00:03<00:01,  6.68it/s]train Phase:  75%|███████▌  | 24/32 [00:03<00:01,  6.79it/s]train Phase:  78%|███████▊  | 25/32 [00:03<00:01,  6.74it/s]train Phase:  81%|████████▏ | 26/32 [00:03<00:00,  6.74it/s]train Phase:  84%|████████▍ | 27/32 [00:04<00:00,  6.77it/s]train Phase:  88%|████████▊ | 28/32 [00:04<00:00,  6.71it/s]train Phase:  91%|█████████ | 29/32 [00:04<00:00,  6.59it/s]train Phase:  94%|█████████▍| 30/32 [00:04<00:00,  6.71it/s]train Phase:  97%|█████████▋| 31/32 [00:04<00:00,  6.69it/s]train Phase: 100%|██████████| 32/32 [00:04<00:00,  6.59it/s]train Phase: 100%|██████████| 32/32 [00:04<00:00,  6.58it/s]
-Epoch 3/10 - train Loss: 2.3825, train Accuracy: 0.7188
-val Phase:   0%|          | 0/32 [00:00<?, ?it/s]val Phase:   6%|▋         | 2/32 [00:00<00:01, 15.96it/s]val Phase:  12%|█▎        | 4/32 [00:00<00:01, 17.33it/s]val Phase:  19%|█▉        | 6/32 [00:00<00:01, 16.92it/s]val Phase:  25%|██▌       | 8/32 [00:00<00:01, 16.28it/s]val Phase:  31%|███▏      | 10/32 [00:00<00:01, 16.34it/s]val Phase:  38%|███▊      | 12/32 [00:00<00:01, 16.41it/s]val Phase:  44%|████▍     | 14/32 [00:00<00:01, 16.27it/s]val Phase:  50%|█████     | 16/32 [00:00<00:00, 16.25it/s]val Phase:  56%|█████▋    | 18/32 [00:01<00:00, 16.46it/s]val Phase:  62%|██████▎   | 20/32 [00:01<00:00, 16.48it/s]val Phase:  69%|██████▉   | 22/32 [00:01<00:00, 16.77it/s]val Phase:  75%|███████▌  | 24/32 [00:01<00:00, 17.32it/s]val Phase:  81%|████████▏ | 26/32 [00:01<00:00, 17.33it/s]val Phase:  88%|████████▊ | 28/32 [00:01<00:00, 17.38it/s]val Phase:  94%|█████████▍| 30/32 [00:01<00:00, 17.11it/s]val Phase: 100%|██████████| 32/32 [00:01<00:00, 16.82it/s]val Phase: 100%|██████████| 32/32 [00:01<00:00, 16.74it/s]
-Training Epochs:  30%|███       | 3/10 [00:24<00:53,  7.64s/it]Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0019,  0.0038, -0.0226,  ..., -0.0239, -0.0256, -0.0240],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.928142070770264
-Predicted indices: tensor([859], device='cuda:0')
-Max values: tensor([0.1302], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 859 default is 0
-True label: change, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-0.0157, -0.0093, -0.0138,  ..., -0.0193, -0.0203, -0.0025],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.952634811401367
-Predicted indices: tensor([413], device='cuda:0')
-Max values: tensor([0.1547], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 413 default is 0
-True label: spread, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0246,  0.0347, -0.0227,  ..., -0.0180, -0.0199, -0.0064],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.95065450668335
-Predicted indices: tensor([487], device='cuda:0')
-Max values: tensor([0.1725], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 487 default is 0
-True label: move, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0151,  0.0240, -0.0195,  ..., -0.0221, -0.0241, -0.0070],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.894351005554199
-Predicted indices: tensor([487], device='cuda:0')
-Max values: tensor([0.1565], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 487 default is 0
-True label: rip, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-0.0166, -0.0154, -0.0160,  ..., -0.0218, -0.0220, -0.0187],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.95202112197876
-Predicted indices: tensor([576], device='cuda:0')
-Max values: tensor([0.1455], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 576 default is 0
-True label: take, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0203,  0.0329, -0.0116,  ..., -0.0191, -0.0211, -0.0193],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.958742618560791
-Predicted indices: tensor([487], device='cuda:0')
-Max values: tensor([0.1692], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 487 default is 0
-True label: pull, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0080, -0.0045, -0.0278,  ..., -0.0079, -0.0118, -0.0272],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.930628776550293
-Predicted indices: tensor([364], device='cuda:0')
-Max values: tensor([0.1391], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 364 default is 0
-True label: dry, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-0.0188, -0.0165, -0.0196,  ..., -0.0184, -0.0205,  0.0527],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.953845977783203
-Predicted indices: tensor([937], device='cuda:0')
-Max values: tensor([0.1592], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 937 default is 0
-True label: take, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-0.0173, -0.0147, -0.0184,  ..., -0.0208, -0.0220, -0.0182],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.790667533874512
-Predicted indices: tensor([937], device='cuda:0')
-Max values: tensor([0.1557], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 937 default is 0
-True label: rip, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0150,  0.0241, -0.0258,  ..., -0.0214, -0.0223, -0.0209],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.933642387390137
-Predicted indices: tensor([293], device='cuda:0')
-Max values: tensor([0.1495], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 293 default is 0
-True label: screw, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-0.0157,  0.0056, -0.0167,  ..., -0.0231, -0.0233, -0.0133],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.935179710388184
-Predicted indices: tensor([642], device='cuda:0')
-Max values: tensor([0.1349], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 642 default is 0
-True label: wash, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0160,  0.0248, -0.0238,  ..., -0.0216, -0.0197, -0.0212],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.915958881378174
-Predicted indices: tensor([487], device='cuda:0')
-Max values: tensor([0.1584], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 487 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-9.4285e-05,  1.1274e-02, -2.3648e-02,  ..., -2.7428e-02,
-        -2.8568e-02, -2.6354e-02], device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.946194648742676
-Predicted indices: tensor([293], device='cuda:0')
-Max values: tensor([0.1268], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 293 default is 0
-True label: take, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-0.0160, -0.0142,  0.0046,  ..., -0.0179, -0.0185,  0.0007],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.953414440155029
-Predicted indices: tensor([937], device='cuda:0')
-Max values: tensor([0.1678], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 937 default is 0
-True label: take, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0190,  0.0290, -0.0154,  ..., -0.0194, -0.0214, -0.0196],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.947389125823975
-Predicted indices: tensor([487], device='cuda:0')
-Max values: tensor([0.1611], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 487 default is 0
-True label: close, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-0.0108, -0.0129, -0.0160,  ..., -0.0204, -0.0205,  0.0098],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.949584007263184
-Predicted indices: tensor([720], device='cuda:0')
-Max values: tensor([0.1623], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 720 default is 0
-True label: take, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0160,  0.0248, -0.0238,  ..., -0.0216, -0.0197, -0.0212],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.915958881378174
-Predicted indices: tensor([487], device='cuda:0')
-Max values: tensor([0.1584], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 487 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-0.0059, -0.0037, -0.0229,  ..., -0.0225, -0.0245,  0.0118],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.937838554382324
-Predicted indices: tensor([937], device='cuda:0')
-Max values: tensor([0.1385], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 937 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-0.0194,  0.0164, -0.0110,  ..., -0.0184, -0.0204, -0.0151],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.95137357711792
-Predicted indices: tensor([937], device='cuda:0')
-Max values: tensor([0.1497], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 937 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0172,  0.0257, -0.0241,  ..., -0.0174, -0.0212, -0.0194],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.914802551269531
-Predicted indices: tensor([487], device='cuda:0')
-Max values: tensor([0.1581], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 487 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0019,  0.0136,  0.0018,  ..., -0.0240, -0.0267, -0.0037],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.930089473724365
-Predicted indices: tensor([364], device='cuda:0')
-Max values: tensor([0.1334], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 364 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0184,  0.0274, -0.0241,  ..., -0.0193, -0.0200, -0.0194],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.913540840148926
-Predicted indices: tensor([487], device='cuda:0')
-Max values: tensor([0.1566], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 487 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0176,  0.0276, -0.0242,  ..., -0.0215, -0.0235, -0.0217],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.9144062995910645
-Predicted indices: tensor([487], device='cuda:0')
-Max values: tensor([0.1600], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 487 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0244,  0.0344, -0.0162,  ..., -0.0163, -0.0200, -0.0177],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.9076056480407715
-Predicted indices: tensor([487], device='cuda:0')
-Max values: tensor([0.1726], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 487 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0142,  0.0220, -0.0209,  ..., -0.0205, -0.0225, -0.0175],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.917807102203369
-Predicted indices: tensor([293], device='cuda:0')
-Max values: tensor([0.1451], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 293 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0015,  0.0100, -0.0052,  ..., -0.0245, -0.0241, -0.0240],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.930497646331787
-Predicted indices: tensor([293], device='cuda:0')
-Max values: tensor([0.1391], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 293 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0083,  0.0176, -0.0239,  ..., -0.0197, -0.0242, -0.0219],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.923705577850342
-Predicted indices: tensor([293], device='cuda:0')
-Max values: tensor([0.1323], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 293 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0087,  0.0161, -0.0185,  ..., -0.0228, -0.0247, -0.0229],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.923251152038574
-Predicted indices: tensor([487], device='cuda:0')
-Max values: tensor([0.1440], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 487 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-0.0160, -0.0152, -0.0182,  ..., -0.0163, -0.0174, -0.0131],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.947962284088135
-Predicted indices: tensor([576], device='cuda:0')
-Max values: tensor([0.1544], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 576 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0236,  0.0340, -0.0239,  ..., -0.0175, -0.0195, -0.0176],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.908354759216309
-Predicted indices: tensor([487], device='cuda:0')
-Max values: tensor([0.1753], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 487 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0240,  0.0306, -0.0248,  ..., -0.0217, -0.0222, -0.0179],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.908017158508301
-Predicted indices: tensor([487], device='cuda:0')
-Max values: tensor([0.1652], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 487 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-0.0152, -0.0142, -0.0172,  ..., -0.0178, -0.0183,  0.0212],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.9471564292907715
-Predicted indices: tensor([6], device='cuda:0')
-Max values: tensor([0.1725], device='cuda:0', grad_fn=<MaxBackward0>)
-True label: add, Predicted label: rip
-Epoch 3/10 - val Loss: 6.9277, val Accuracy: 0.0000
-Accuracy of add : 0.00%
-Accuracy of change : 0.00%
-Accuracy of close : 0.00%
-Accuracy of dry : 0.00%
-Accuracy of move : 0.00%
-Accuracy of pull : 0.00%
-Accuracy of rip : 0.00%
-Accuracy of screw : 0.00%
-Accuracy of spread : 0.00%
-Accuracy of take : 0.00%
-Accuracy of wash : 0.00%
-train Phase:   0%|          | 0/32 [00:00<?, ?it/s]train Phase:   3%|▎         | 1/32 [00:00<00:04,  6.44it/s]train Phase:   6%|▋         | 2/32 [00:00<00:04,  6.43it/s]train Phase:   9%|▉         | 3/32 [00:00<00:04,  6.61it/s]train Phase:  12%|█▎        | 4/32 [00:00<00:04,  6.74it/s]train Phase:  16%|█▌        | 5/32 [00:00<00:04,  6.59it/s]train Phase:  19%|█▉        | 6/32 [00:00<00:03,  6.72it/s]train Phase:  22%|██▏       | 7/32 [00:01<00:03,  6.62it/s]train Phase:  25%|██▌       | 8/32 [00:01<00:03,  6.52it/s]train Phase:  28%|██▊       | 9/32 [00:01<00:03,  6.48it/s]train Phase:  31%|███▏      | 10/32 [00:01<00:03,  6.55it/s]train Phase:  34%|███▍      | 11/32 [00:01<00:03,  6.51it/s]train Phase:  38%|███▊      | 12/32 [00:01<00:03,  6.63it/s]train Phase:  41%|████      | 13/32 [00:01<00:02,  6.60it/s]train Phase:  44%|████▍     | 14/32 [00:02<00:02,  6.55it/s]train Phase:  47%|████▋     | 15/32 [00:02<00:02,  6.66it/s]train Phase:  50%|█████     | 16/32 [00:02<00:02,  6.53it/s]train Phase:  53%|█████▎    | 17/32 [00:02<00:02,  6.63it/s]train Phase:  56%|█████▋    | 18/32 [00:02<00:02,  6.62it/s]train Phase:  59%|█████▉    | 19/32 [00:02<00:01,  6.50it/s]train Phase:  62%|██████▎   | 20/32 [00:03<00:01,  6.59it/s]train Phase:  66%|██████▌   | 21/32 [00:03<00:01,  6.61it/s]train Phase:  69%|██████▉   | 22/32 [00:03<00:01,  6.63it/s]train Phase:  72%|███████▏  | 23/32 [00:03<00:01,  6.66it/s]train Phase:  75%|███████▌  | 24/32 [00:03<00:01,  6.77it/s]train Phase:  78%|███████▊  | 25/32 [00:03<00:01,  6.74it/s]train Phase:  81%|████████▏ | 26/32 [00:03<00:00,  6.07it/s]train Phase:  84%|████████▍ | 27/32 [00:04<00:00,  6.21it/s]train Phase:  88%|████████▊ | 28/32 [00:04<00:00,  6.39it/s]train Phase:  91%|█████████ | 29/32 [00:04<00:00,  6.38it/s]train Phase:  94%|█████████▍| 30/32 [00:04<00:00,  6.57it/s]train Phase:  97%|█████████▋| 31/32 [00:04<00:00,  6.68it/s]train Phase: 100%|██████████| 32/32 [00:04<00:00,  6.59it/s]train Phase: 100%|██████████| 32/32 [00:04<00:00,  6.56it/s]
-Epoch 4/10 - train Loss: 2.3803, train Accuracy: 0.8125
-val Phase:   0%|          | 0/32 [00:00<?, ?it/s]val Phase:   6%|▋         | 2/32 [00:00<00:01, 15.97it/s]val Phase:  12%|█▎        | 4/32 [00:00<00:01, 17.51it/s]val Phase:  19%|█▉        | 6/32 [00:00<00:01, 17.01it/s]val Phase:  25%|██▌       | 8/32 [00:00<00:01, 16.33it/s]val Phase:  31%|███▏      | 10/32 [00:00<00:01, 16.44it/s]val Phase:  38%|███▊      | 12/32 [00:00<00:01, 16.49it/s]val Phase:  44%|████▍     | 14/32 [00:00<00:01, 16.33it/s]val Phase:  50%|█████     | 16/32 [00:00<00:00, 16.35it/s]val Phase:  56%|█████▋    | 18/32 [00:01<00:00, 16.44it/s]val Phase:  62%|██████▎   | 20/32 [00:01<00:00, 16.46it/s]val Phase:  69%|██████▉   | 22/32 [00:01<00:00, 16.76it/s]val Phase:  75%|███████▌  | 24/32 [00:01<00:00, 17.35it/s]val Phase:  81%|████████▏ | 26/32 [00:01<00:00, 17.39it/s]val Phase:  88%|████████▊ | 28/32 [00:01<00:00, 17.45it/s]val Phase:  94%|█████████▍| 30/32 [00:01<00:00, 17.18it/s]val Phase: 100%|██████████| 32/32 [00:01<00:00, 16.95it/s]val Phase: 100%|██████████| 32/32 [00:01<00:00, 16.81it/s]
-Training Epochs:  40%|████      | 4/10 [00:30<00:43,  7.31s/it]Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0170,  0.0089, -0.0244,  ..., -0.0242, -0.0263, -0.0244],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.923097133636475
-Predicted indices: tensor([101], device='cuda:0')
-Max values: tensor([0.1305], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 101 default is 0
-True label: change, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-0.0177, -0.0060, -0.0133,  ..., -0.0206, -0.0220,  0.0002],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.953978061676025
-Predicted indices: tensor([413], device='cuda:0')
-Max values: tensor([0.1517], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 413 default is 0
-True label: spread, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0383,  0.0349, -0.0235,  ..., -0.0177, -0.0197, -0.0077],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.9526143074035645
-Predicted indices: tensor([487], device='cuda:0')
-Max values: tensor([0.1736], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 487 default is 0
-True label: move, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0308,  0.0275, -0.0209,  ..., -0.0215, -0.0236, -0.0069],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.918225288391113
-Predicted indices: tensor([1001], device='cuda:0')
-Max values: tensor([0.1567], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 1001 default is 0
-True label: rip, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-0.0166, -0.0162, -0.0130,  ..., -0.0234, -0.0237, -0.0219],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.952877521514893
-Predicted indices: tensor([937], device='cuda:0')
-Max values: tensor([0.1456], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 937 default is 0
-True label: take, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0344,  0.0373, -0.0144,  ..., -0.0191, -0.0211, -0.0192],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.957515239715576
-Predicted indices: tensor([487], device='cuda:0')
-Max values: tensor([0.1691], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 487 default is 0
-True label: pull, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0159, -0.0011, -0.0312,  ..., -0.0050, -0.0057, -0.0260],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.9308342933654785
-Predicted indices: tensor([364], device='cuda:0')
-Max values: tensor([0.1372], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 364 default is 0
-True label: dry, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-0.0195, -0.0133, -0.0210,  ..., -0.0181, -0.0211,  0.0483],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.955291748046875
-Predicted indices: tensor([937], device='cuda:0')
-Max values: tensor([0.1549], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 937 default is 0
-True label: take, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-0.0146, -0.0069, -0.0190,  ..., -0.0213, -0.0217, -0.0185],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.825728893280029
-Predicted indices: tensor([937], device='cuda:0')
-Max values: tensor([0.1421], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 937 default is 0
-True label: rip, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0296,  0.0278, -0.0280,  ..., -0.0207, -0.0171, -0.0196],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.914551258087158
-Predicted indices: tensor([1001], device='cuda:0')
-Max values: tensor([0.1517], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 1001 default is 0
-True label: screw, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-0.0161,  0.0235, -0.0149,  ..., -0.0225, -0.0230, -0.0160],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.941230773925781
-Predicted indices: tensor([642], device='cuda:0')
-Max values: tensor([0.1378], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 642 default is 0
-True label: wash, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0291,  0.0261, -0.0258,  ..., -0.0210, -0.0176, -0.0210],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.902890682220459
-Predicted indices: tensor([487], device='cuda:0')
-Max values: tensor([0.1548], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 487 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0098,  0.0178, -0.0259,  ..., -0.0281, -0.0299, -0.0282],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.952204704284668
-Predicted indices: tensor([293], device='cuda:0')
-Max values: tensor([0.1193], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 293 default is 0
-True label: take, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-0.0181, -0.0110,  0.0008,  ..., -0.0192, -0.0192,  0.0035],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.955595016479492
-Predicted indices: tensor([937], device='cuda:0')
-Max values: tensor([0.1696], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 937 default is 0
-True label: take, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0334,  0.0312, -0.0165,  ..., -0.0188, -0.0208, -0.0190],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.948525905609131
-Predicted indices: tensor([487], device='cuda:0')
-Max values: tensor([0.1591], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 487 default is 0
-True label: close, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-0.0098, -0.0130, -0.0160,  ..., -0.0214, -0.0217,  0.0057],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.949634075164795
-Predicted indices: tensor([720], device='cuda:0')
-Max values: tensor([0.1663], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 720 default is 0
-True label: take, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0291,  0.0261, -0.0258,  ..., -0.0210, -0.0176, -0.0210],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.902890682220459
-Predicted indices: tensor([487], device='cuda:0')
-Max values: tensor([0.1548], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 487 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-1.0277e-03, -5.5326e-05, -2.5585e-02,  ..., -2.2946e-02,
-        -2.4463e-02,  8.9713e-03], device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.933012008666992
-Predicted indices: tensor([937], device='cuda:0')
-Max values: tensor([0.1395], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 937 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-0.0194,  0.0295, -0.0063,  ..., -0.0187, -0.0208, -0.0179],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.951412677764893
-Predicted indices: tensor([351], device='cuda:0')
-Max values: tensor([0.1529], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 351 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0315,  0.0291, -0.0257,  ..., -0.0166, -0.0209, -0.0190],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.9004411697387695
-Predicted indices: tensor([1001], device='cuda:0')
-Max values: tensor([0.1580], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 1001 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0129,  0.0203,  0.0051,  ..., -0.0246, -0.0274, -0.0055],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.919127464294434
-Predicted indices: tensor([364], device='cuda:0')
-Max values: tensor([0.1291], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 364 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0335,  0.0302, -0.0259,  ..., -0.0187, -0.0203, -0.0193],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.898518085479736
-Predicted indices: tensor([1001], device='cuda:0')
-Max values: tensor([0.1578], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 1001 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0313,  0.0344, -0.0257,  ..., -0.0213, -0.0233, -0.0214],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.900696277618408
-Predicted indices: tensor([487], device='cuda:0')
-Max values: tensor([0.1585], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 487 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0395,  0.0353, -0.0169,  ..., -0.0167, -0.0201, -0.0181],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.892484188079834
-Predicted indices: tensor([487], device='cuda:0')
-Max values: tensor([0.1723], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 487 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0283,  0.0249, -0.0229,  ..., -0.0193, -0.0220, -0.0174],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.903727054595947
-Predicted indices: tensor([1001], device='cuda:0')
-Max values: tensor([0.1514], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 1001 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0135,  0.0144, -0.0069,  ..., -0.0252, -0.0238, -0.0249],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.918469429016113
-Predicted indices: tensor([293], device='cuda:0')
-Max values: tensor([0.1342], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 293 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0224,  0.0244, -0.0269,  ..., -0.0181, -0.0241, -0.0222],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.90962028503418
-Predicted indices: tensor([1001], device='cuda:0')
-Max values: tensor([0.1312], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 1001 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0218,  0.0212, -0.0221,  ..., -0.0227, -0.0247, -0.0228],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.910205841064453
-Predicted indices: tensor([554], device='cuda:0')
-Max values: tensor([0.1395], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 554 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-0.0170, -0.0148, -0.0193,  ..., -0.0162, -0.0176, -0.0108],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.949024677276611
-Predicted indices: tensor([960], device='cuda:0')
-Max values: tensor([0.1535], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 960 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0374,  0.0339, -0.0254,  ..., -0.0173, -0.0193, -0.0174],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.8946123123168945
-Predicted indices: tensor([487], device='cuda:0')
-Max values: tensor([0.1787], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 487 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0370,  0.0331, -0.0260,  ..., -0.0212, -0.0212, -0.0172],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.894998550415039
-Predicted indices: tensor([487], device='cuda:0')
-Max values: tensor([0.1653], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 487 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-0.0162, -0.0153, -0.0187,  ..., -0.0181, -0.0188,  0.0170],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.948215007781982
-Predicted indices: tensor([6], device='cuda:0')
-Max values: tensor([0.1641], device='cuda:0', grad_fn=<MaxBackward0>)
-True label: add, Predicted label: rip
-Epoch 4/10 - val Loss: 6.9238, val Accuracy: 0.0000
-Accuracy of add : 0.00%
-Accuracy of change : 0.00%
-Accuracy of close : 0.00%
-Accuracy of dry : 0.00%
-Accuracy of move : 0.00%
-Accuracy of pull : 0.00%
-Accuracy of rip : 0.00%
-Accuracy of screw : 0.00%
-Accuracy of spread : 0.00%
-Accuracy of take : 0.00%
-Accuracy of wash : 0.00%
-train Phase:   0%|          | 0/32 [00:00<?, ?it/s]train Phase:   3%|▎         | 1/32 [00:00<00:04,  6.34it/s]train Phase:   6%|▋         | 2/32 [00:00<00:04,  6.27it/s]train Phase:   9%|▉         | 3/32 [00:00<00:04,  6.60it/s]train Phase:  12%|█▎        | 4/32 [00:00<00:04,  6.66it/s]train Phase:  16%|█▌        | 5/32 [00:00<00:04,  6.52it/s]train Phase:  19%|█▉        | 6/32 [00:00<00:03,  6.69it/s]train Phase:  22%|██▏       | 7/32 [00:01<00:03,  6.67it/s]train Phase:  25%|██▌       | 8/32 [00:01<00:03,  6.48it/s]train Phase:  28%|██▊       | 9/32 [00:01<00:03,  6.45it/s]train Phase:  31%|███▏      | 10/32 [00:01<00:03,  6.60it/s]train Phase:  34%|███▍      | 11/32 [00:01<00:03,  6.48it/s]train Phase:  38%|███▊      | 12/32 [00:01<00:03,  6.61it/s]train Phase:  41%|████      | 13/32 [00:01<00:02,  6.56it/s]train Phase:  44%|████▍     | 14/32 [00:02<00:02,  6.47it/s]train Phase:  47%|████▋     | 15/32 [00:02<00:02,  6.52it/s]train Phase:  50%|█████     | 16/32 [00:02<00:02,  6.48it/s]train Phase:  53%|█████▎    | 17/32 [00:02<00:02,  6.47it/s]train Phase:  56%|█████▋    | 18/32 [00:02<00:02,  6.50it/s]train Phase:  59%|█████▉    | 19/32 [00:02<00:02,  6.46it/s]train Phase:  62%|██████▎   | 20/32 [00:03<00:01,  6.60it/s]train Phase:  66%|██████▌   | 21/32 [00:03<00:01,  6.50it/s]train Phase:  69%|██████▉   | 22/32 [00:03<00:01,  6.61it/s]train Phase:  72%|███████▏  | 23/32 [00:03<00:01,  6.67it/s]train Phase:  75%|███████▌  | 24/32 [00:03<00:01,  6.77it/s]train Phase:  78%|███████▊  | 25/32 [00:03<00:01,  6.79it/s]train Phase:  81%|████████▏ | 26/32 [00:03<00:00,  6.77it/s]train Phase:  84%|████████▍ | 27/32 [00:04<00:00,  6.76it/s]train Phase:  88%|████████▊ | 28/32 [00:04<00:00,  6.78it/s]train Phase:  91%|█████████ | 29/32 [00:04<00:00,  6.63it/s]train Phase:  94%|█████████▍| 30/32 [00:04<00:00,  6.71it/s]train Phase:  97%|█████████▋| 31/32 [00:04<00:00,  6.77it/s]train Phase: 100%|██████████| 32/32 [00:04<00:00,  6.64it/s]train Phase: 100%|██████████| 32/32 [00:04<00:00,  6.60it/s]
-Epoch 5/10 - train Loss: 2.3788, train Accuracy: 0.8125
-val Phase:   0%|          | 0/32 [00:00<?, ?it/s]val Phase:   6%|▋         | 2/32 [00:00<00:01, 15.83it/s]val Phase:  12%|█▎        | 4/32 [00:00<00:01, 17.35it/s]val Phase:  19%|█▉        | 6/32 [00:00<00:01, 16.91it/s]val Phase:  25%|██▌       | 8/32 [00:00<00:01, 16.25it/s]val Phase:  31%|███▏      | 10/32 [00:00<00:01, 16.15it/s]val Phase:  38%|███▊      | 12/32 [00:00<00:01, 16.26it/s]val Phase:  44%|████▍     | 14/32 [00:00<00:01, 16.16it/s]val Phase:  50%|█████     | 16/32 [00:00<00:00, 16.09it/s]val Phase:  56%|█████▋    | 18/32 [00:01<00:00, 16.31it/s]val Phase:  62%|██████▎   | 20/32 [00:01<00:00, 16.35it/s]val Phase:  69%|██████▉   | 22/32 [00:01<00:00, 16.65it/s]val Phase:  75%|███████▌  | 24/32 [00:01<00:00, 17.23it/s]val Phase:  81%|████████▏ | 26/32 [00:01<00:00, 17.28it/s]val Phase:  88%|████████▊ | 28/32 [00:01<00:00, 17.37it/s]val Phase:  94%|█████████▍| 30/32 [00:01<00:00, 17.12it/s]val Phase: 100%|██████████| 32/32 [00:01<00:00, 16.90it/s]val Phase: 100%|██████████| 32/32 [00:01<00:00, 16.69it/s]
-Training Epochs:  50%|█████     | 5/10 [00:37<00:35,  7.11s/it]Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0144,  0.0147, -0.0255,  ..., -0.0236, -0.0256, -0.0237],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.917254447937012
-Predicted indices: tensor([101], device='cuda:0')
-Max values: tensor([0.1272], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 101 default is 0
-True label: change, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-0.0160, -0.0090, -0.0112,  ..., -0.0206, -0.0226,  0.0043],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.95270299911499
-Predicted indices: tensor([272], device='cuda:0')
-Max values: tensor([0.1574], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 272 default is 0
-True label: spread, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0397,  0.0473, -0.0232,  ..., -0.0186, -0.0206, -0.0070],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.955099105834961
-Predicted indices: tensor([487], device='cuda:0')
-Max values: tensor([0.1696], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 487 default is 0
-True label: move, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0314,  0.0388, -0.0204,  ..., -0.0223, -0.0243, -0.0110],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.90362548828125
-Predicted indices: tensor([1001], device='cuda:0')
-Max values: tensor([0.1501], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 1001 default is 0
-True label: rip, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-0.0143, -0.0147, -0.0166,  ..., -0.0224, -0.0230, -0.0201],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.9512786865234375
-Predicted indices: tensor([937], device='cuda:0')
-Max values: tensor([0.1614], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 937 default is 0
-True label: take, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0352,  0.0464, -0.0119,  ..., -0.0201, -0.0221, -0.0202],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.959038257598877
-Predicted indices: tensor([487], device='cuda:0')
-Max values: tensor([0.1644], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 487 default is 0
-True label: pull, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0129,  0.0025, -0.0283,  ..., -0.0103, -0.0207, -0.0278],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.924800872802734
-Predicted indices: tensor([251], device='cuda:0')
-Max values: tensor([0.1316], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 251 default is 0
-True label: dry, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-0.0162, -0.0153, -0.0185,  ..., -0.0192, -0.0215,  0.0489],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.952776908874512
-Predicted indices: tensor([937], device='cuda:0')
-Max values: tensor([0.1628], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 937 default is 0
-True label: take, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-0.0145, -0.0037, -0.0164,  ..., -0.0211, -0.0230, -0.0189],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.799009323120117
-Predicted indices: tensor([182], device='cuda:0')
-Max values: tensor([0.1452], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 182 default is 0
-True label: rip, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0296,  0.0369, -0.0274,  ..., -0.0218, -0.0210, -0.0215],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.919597148895264
-Predicted indices: tensor([1001], device='cuda:0')
-Max values: tensor([0.1435], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 1001 default is 0
-True label: screw, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-0.0138,  0.0194, -0.0158,  ..., -0.0228, -0.0238, -0.0130],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.924309253692627
-Predicted indices: tensor([642], device='cuda:0')
-Max values: tensor([0.1541], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 642 default is 0
-True label: wash, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0287,  0.0354, -0.0249,  ..., -0.0217, -0.0208, -0.0211],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.903242111206055
-Predicted indices: tensor([487], device='cuda:0')
-Max values: tensor([0.1498], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 487 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0096,  0.0196, -0.0240,  ..., -0.0285, -0.0305, -0.0281],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.956147193908691
-Predicted indices: tensor([892], device='cuda:0')
-Max values: tensor([0.1235], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 892 default is 0
-True label: take, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-0.0156, -0.0116,  0.0105,  ..., -0.0192, -0.0207,  0.0025],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.952464580535889
-Predicted indices: tensor([937], device='cuda:0')
-Max values: tensor([0.1791], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 937 default is 0
-True label: take, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0342,  0.0426, -0.0146,  ..., -0.0194, -0.0214, -0.0196],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.946613788604736
-Predicted indices: tensor([487], device='cuda:0')
-Max values: tensor([0.1552], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 487 default is 0
-True label: close, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-0.0122, -0.0121, -0.0152,  ..., -0.0196, -0.0205,  0.0072],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.948758125305176
-Predicted indices: tensor([937], device='cuda:0')
-Max values: tensor([0.1712], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 937 default is 0
-True label: take, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0287,  0.0354, -0.0249,  ..., -0.0217, -0.0208, -0.0211],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.903242111206055
-Predicted indices: tensor([487], device='cuda:0')
-Max values: tensor([0.1498], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 487 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-0.0011,  0.0035, -0.0225,  ..., -0.0236, -0.0256,  0.0037],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.933140277862549
-Predicted indices: tensor([642], device='cuda:0')
-Max values: tensor([0.1437], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 642 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-0.0176,  0.0252, -0.0004,  ..., -0.0188, -0.0208, -0.0167],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.949579238891602
-Predicted indices: tensor([351], device='cuda:0')
-Max values: tensor([0.1475], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 351 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0302,  0.0372, -0.0248,  ..., -0.0192, -0.0215, -0.0196],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.901766300201416
-Predicted indices: tensor([1001], device='cuda:0')
-Max values: tensor([0.1532], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 1001 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0115,  0.0264,  0.0047,  ..., -0.0265, -0.0285, -0.0063],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.9205002784729
-Predicted indices: tensor([642], device='cuda:0')
-Max values: tensor([0.1274], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 642 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0326,  0.0398, -0.0250,  ..., -0.0195, -0.0215, -0.0196],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.899370193481445
-Predicted indices: tensor([1001], device='cuda:0')
-Max values: tensor([0.1526], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 1001 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0314,  0.0417, -0.0253,  ..., -0.0221, -0.0241, -0.0222],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.900609970092773
-Predicted indices: tensor([487], device='cuda:0')
-Max values: tensor([0.1588], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 487 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0399,  0.0475, -0.0168,  ..., -0.0185, -0.0209, -0.0186],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.892136573791504
-Predicted indices: tensor([487], device='cuda:0')
-Max values: tensor([0.1666], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 487 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0277,  0.0338, -0.0225,  ..., -0.0211, -0.0231, -0.0189],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.904294490814209
-Predicted indices: tensor([1001], device='cuda:0')
-Max values: tensor([0.1463], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 1001 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0137,  0.0223, -0.0025,  ..., -0.0260, -0.0267, -0.0259],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.918242931365967
-Predicted indices: tensor([293], device='cuda:0')
-Max values: tensor([0.1310], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 293 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0217,  0.0301, -0.0247,  ..., -0.0213, -0.0251, -0.0230],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.910253047943115
-Predicted indices: tensor([250], device='cuda:0')
-Max values: tensor([0.1262], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 250 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0201,  0.0295, -0.0165,  ..., -0.0232, -0.0252, -0.0233],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.911891460418701
-Predicted indices: tensor([293], device='cuda:0')
-Max values: tensor([0.1336], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 293 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-0.0152, -0.0144, -0.0177,  ..., -0.0168, -0.0186, -0.0151],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.947205543518066
-Predicted indices: tensor([960], device='cuda:0')
-Max values: tensor([0.1616], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 960 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0384,  0.0461, -0.0253,  ..., -0.0181, -0.0201, -0.0182],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.893545150756836
-Predicted indices: tensor([487], device='cuda:0')
-Max values: tensor([0.1756], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 487 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0362,  0.0440, -0.0258,  ..., -0.0222, -0.0241, -0.0187],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.895831108093262
-Predicted indices: tensor([487], device='cuda:0')
-Max values: tensor([0.1540], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 487 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-0.0146, -0.0141, -0.0169,  ..., -0.0177, -0.0191,  0.0167],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.9465861320495605
-Predicted indices: tensor([6], device='cuda:0')
-Max values: tensor([0.1700], device='cuda:0', grad_fn=<MaxBackward0>)
-True label: add, Predicted label: rip
-Epoch 5/10 - val Loss: 6.9217, val Accuracy: 0.0000
-Accuracy of add : 0.00%
-Accuracy of change : 0.00%
-Accuracy of close : 0.00%
-Accuracy of dry : 0.00%
-Accuracy of move : 0.00%
-Accuracy of pull : 0.00%
-Accuracy of rip : 0.00%
-Accuracy of screw : 0.00%
-Accuracy of spread : 0.00%
-Accuracy of take : 0.00%
-Accuracy of wash : 0.00%
-train Phase:   0%|          | 0/32 [00:00<?, ?it/s]train Phase:   3%|▎         | 1/32 [00:00<00:04,  6.51it/s]train Phase:   6%|▋         | 2/32 [00:00<00:04,  6.42it/s]train Phase:   9%|▉         | 3/32 [00:00<00:04,  6.69it/s]train Phase:  12%|█▎        | 4/32 [00:00<00:04,  6.78it/s]train Phase:  16%|█▌        | 5/32 [00:00<00:04,  6.57it/s]train Phase:  19%|█▉        | 6/32 [00:00<00:03,  6.70it/s]train Phase:  22%|██▏       | 7/32 [00:01<00:03,  6.67it/s]train Phase:  25%|██▌       | 8/32 [00:01<00:03,  6.54it/s]train Phase:  28%|██▊       | 9/32 [00:01<00:03,  6.48it/s]train Phase:  31%|███▏      | 10/32 [00:01<00:03,  6.57it/s]train Phase:  34%|███▍      | 11/32 [00:01<00:03,  6.52it/s]train Phase:  38%|███▊      | 12/32 [00:01<00:03,  6.63it/s]train Phase:  41%|████      | 13/32 [00:01<00:02,  6.63it/s]train Phase:  44%|████▍     | 14/32 [00:02<00:02,  6.57it/s]train Phase:  47%|████▋     | 15/32 [00:02<00:02,  6.66it/s]train Phase:  50%|█████     | 16/32 [00:02<00:02,  6.57it/s]train Phase:  53%|█████▎    | 17/32 [00:02<00:02,  6.66it/s]train Phase:  56%|█████▋    | 18/32 [00:02<00:02,  6.62it/s]train Phase:  59%|█████▉    | 19/32 [00:02<00:01,  6.54it/s]train Phase:  62%|██████▎   | 20/32 [00:03<00:01,  6.64it/s]train Phase:  66%|██████▌   | 21/32 [00:03<00:01,  6.64it/s]train Phase:  69%|██████▉   | 22/32 [00:03<00:01,  6.72it/s]train Phase:  72%|███████▏  | 23/32 [00:03<00:01,  6.76it/s]train Phase:  75%|███████▌  | 24/32 [00:03<00:01,  6.84it/s]train Phase:  78%|███████▊  | 25/32 [00:03<00:01,  6.84it/s]train Phase:  81%|████████▏ | 26/32 [00:03<00:00,  6.79it/s]train Phase:  84%|████████▍ | 27/32 [00:04<00:00,  6.78it/s]train Phase:  88%|████████▊ | 28/32 [00:04<00:00,  6.79it/s]train Phase:  91%|█████████ | 29/32 [00:04<00:00,  6.60it/s]train Phase:  94%|█████████▍| 30/32 [00:04<00:00,  6.72it/s]train Phase:  97%|█████████▋| 31/32 [00:04<00:00,  6.77it/s]train Phase: 100%|██████████| 32/32 [00:04<00:00,  6.61it/s]train Phase: 100%|██████████| 32/32 [00:04<00:00,  6.65it/s]
-Epoch 6/10 - train Loss: 2.3777, train Accuracy: 0.8438
-val Phase:   0%|          | 0/32 [00:00<?, ?it/s]val Phase:   6%|▋         | 2/32 [00:00<00:02, 12.86it/s]val Phase:  12%|█▎        | 4/32 [00:00<00:02, 13.48it/s]val Phase:  19%|█▉        | 6/32 [00:00<00:01, 13.49it/s]val Phase:  25%|██▌       | 8/32 [00:00<00:01, 13.73it/s]val Phase:  31%|███▏      | 10/32 [00:00<00:01, 14.54it/s]val Phase:  38%|███▊      | 12/32 [00:00<00:01, 15.05it/s]val Phase:  44%|████▍     | 14/32 [00:00<00:01, 15.27it/s]val Phase:  50%|█████     | 16/32 [00:01<00:01, 15.60it/s]val Phase:  56%|█████▋    | 18/32 [00:01<00:00, 15.90it/s]val Phase:  62%|██████▎   | 20/32 [00:01<00:00, 15.79it/s]val Phase:  69%|██████▉   | 22/32 [00:01<00:00, 16.20it/s]val Phase:  75%|███████▌  | 24/32 [00:01<00:00, 16.79it/s]val Phase:  81%|████████▏ | 26/32 [00:01<00:00, 17.00it/s]val Phase:  88%|████████▊ | 28/32 [00:01<00:00, 17.09it/s]val Phase:  94%|█████████▍| 30/32 [00:01<00:00, 16.85it/s]val Phase: 100%|██████████| 32/32 [00:02<00:00, 16.68it/s]val Phase: 100%|██████████| 32/32 [00:02<00:00, 15.73it/s]
-Training Epochs:  60%|██████    | 6/10 [00:44<00:28,  7.03s/it]Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0035,  0.0161, -0.0238,  ..., -0.0223, -0.0244, -0.0225],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.915876865386963
-Predicted indices: tensor([835], device='cuda:0')
-Max values: tensor([0.1349], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 835 default is 0
-True label: change, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-0.0174, -0.0130, -0.0080,  ..., -0.0208, -0.0225,  0.0004],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.955093860626221
-Predicted indices: tensor([272], device='cuda:0')
-Max values: tensor([0.1536], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 272 default is 0
-True label: spread, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0231,  0.0567, -0.0224,  ..., -0.0174, -0.0194, -0.0079],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.9541120529174805
-Predicted indices: tensor([487], device='cuda:0')
-Max values: tensor([0.1720], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 487 default is 0
-True label: move, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0148,  0.0471, -0.0156,  ..., -0.0212, -0.0232, -0.0069],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.91401481628418
-Predicted indices: tensor([487], device='cuda:0')
-Max values: tensor([0.1496], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 487 default is 0
-True label: rip, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-0.0144, -0.0148, -0.0148,  ..., -0.0221, -0.0218, -0.0205],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.9519524574279785
-Predicted indices: tensor([937], device='cuda:0')
-Max values: tensor([0.1556], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 937 default is 0
-True label: take, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0173,  0.0533, -0.0081,  ..., -0.0185, -0.0205, -0.0187],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.9573540687561035
-Predicted indices: tensor([487], device='cuda:0')
-Max values: tensor([0.1666], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 487 default is 0
-True label: pull, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0019,  0.0016, -0.0264,  ..., -0.0072, -0.0102, -0.0259],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.935359954833984
-Predicted indices: tensor([388], device='cuda:0')
-Max values: tensor([0.1341], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 388 default is 0
-True label: dry, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-0.0155, -0.0146, -0.0184,  ..., -0.0185, -0.0204,  0.0512],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.952663421630859
-Predicted indices: tensor([937], device='cuda:0')
-Max values: tensor([0.1535], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 937 default is 0
-True label: take, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-0.0151,  0.0015, -0.0170,  ..., -0.0199, -0.0214, -0.0175],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.824532985687256
-Predicted indices: tensor([250], device='cuda:0')
-Max values: tensor([0.1432], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 250 default is 0
-True label: rip, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0123,  0.0410, -0.0266,  ..., -0.0210, -0.0173, -0.0211],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.9298014640808105
-Predicted indices: tensor([682], device='cuda:0')
-Max values: tensor([0.1517], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 682 default is 0
-True label: screw, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-0.0149,  0.0201, -0.0160,  ..., -0.0222, -0.0223, -0.0154],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.921313762664795
-Predicted indices: tensor([642], device='cuda:0')
-Max values: tensor([0.1645], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 642 default is 0
-True label: wash, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0130,  0.0410, -0.0237,  ..., -0.0203, -0.0181, -0.0200],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.918954372406006
-Predicted indices: tensor([682], device='cuda:0')
-Max values: tensor([0.1590], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 682 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-0.0026,  0.0132, -0.0232,  ..., -0.0257, -0.0262, -0.0236],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.946474552154541
-Predicted indices: tensor([531], device='cuda:0')
-Max values: tensor([0.1229], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 531 default is 0
-True label: take, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-1.6485e-02, -1.5846e-02,  8.6163e-03,  ..., -1.9654e-02,
-        -1.9684e-02, -7.0517e-05], device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.954188346862793
-Predicted indices: tensor([937], device='cuda:0')
-Max values: tensor([0.1745], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 937 default is 0
-True label: take, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0179,  0.0500, -0.0129,  ..., -0.0181, -0.0201, -0.0182],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.9448628425598145
-Predicted indices: tensor([487], device='cuda:0')
-Max values: tensor([0.1575], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 487 default is 0
-True label: close, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-0.0097, -0.0118, -0.0152,  ..., -0.0194, -0.0197,  0.0186],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.948775291442871
-Predicted indices: tensor([937], device='cuda:0')
-Max values: tensor([0.1652], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 937 default is 0
-True label: take, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0130,  0.0410, -0.0237,  ..., -0.0203, -0.0181, -0.0200],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.918954372406006
-Predicted indices: tensor([682], device='cuda:0')
-Max values: tensor([0.1590], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 682 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-0.0095,  0.0047, -0.0231,  ..., -0.0228, -0.0248,  0.0002],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.941499710083008
-Predicted indices: tensor([498], device='cuda:0')
-Max values: tensor([0.1472], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 498 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-0.0177,  0.0245,  0.0023,  ..., -0.0179, -0.0199, -0.0165],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.949676036834717
-Predicted indices: tensor([351], device='cuda:0')
-Max values: tensor([0.1491], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 351 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0138,  0.0422, -0.0237,  ..., -0.0167, -0.0205, -0.0186],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.918182849884033
-Predicted indices: tensor([682], device='cuda:0')
-Max values: tensor([0.1566], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 682 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-0.0021,  0.0264,  0.0119,  ..., -0.0252, -0.0272, -0.0014],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.934107303619385
-Predicted indices: tensor([642], device='cuda:0')
-Max values: tensor([0.1311], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 642 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0157,  0.0457, -0.0238,  ..., -0.0185, -0.0205, -0.0187],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.916315078735352
-Predicted indices: tensor([682], device='cuda:0')
-Max values: tensor([0.1576], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 682 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0140,  0.0459, -0.0241,  ..., -0.0200, -0.0220, -0.0201],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.917970657348633
-Predicted indices: tensor([487], device='cuda:0')
-Max values: tensor([0.1614], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 487 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0234,  0.0575, -0.0128,  ..., -0.0175, -0.0197, -0.0168],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.9086151123046875
-Predicted indices: tensor([487], device='cuda:0')
-Max values: tensor([0.1675], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 487 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0126,  0.0397, -0.0220,  ..., -0.0199, -0.0219, -0.0176],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.919397830963135
-Predicted indices: tensor([1001], device='cuda:0')
-Max values: tensor([0.1462], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 1001 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-9.9462e-05,  2.2415e-02, -1.2934e-03,  ..., -2.4482e-02,
-        -2.6006e-02, -2.4792e-02], device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.932094573974609
-Predicted indices: tensor([293], device='cuda:0')
-Max values: tensor([0.1275], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 293 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0071,  0.0333, -0.0243,  ..., -0.0208, -0.0241, -0.0221],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.924941539764404
-Predicted indices: tensor([1001], device='cuda:0')
-Max values: tensor([0.1263], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 1001 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0057,  0.0331, -0.0158,  ..., -0.0221, -0.0241, -0.0222],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.92625093460083
-Predicted indices: tensor([682], device='cuda:0')
-Max values: tensor([0.1426], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 682 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-0.0163, -0.0148, -0.0188,  ..., -0.0156, -0.0174, -0.0130],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.948280334472656
-Predicted indices: tensor([498], device='cuda:0')
-Max values: tensor([0.1716], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 498 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0213,  0.0551, -0.0242,  ..., -0.0167, -0.0187, -0.0169],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.910714149475098
-Predicted indices: tensor([487], device='cuda:0')
-Max values: tensor([0.1774], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 487 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0199,  0.0537, -0.0255,  ..., -0.0211, -0.0229, -0.0189],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.912142753601074
-Predicted indices: tensor([487], device='cuda:0')
-Max values: tensor([0.1563], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 487 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-0.0158, -0.0139, -0.0180,  ..., -0.0179, -0.0193,  0.0094],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.947758674621582
-Predicted indices: tensor([498], device='cuda:0')
-Max values: tensor([0.1702], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 498 default is 0
-True label: add, Predicted label: add
-Epoch 6/10 - val Loss: 6.9298, val Accuracy: 0.0000
-Accuracy of add : 0.00%
-Accuracy of change : 0.00%
-Accuracy of close : 0.00%
-Accuracy of dry : 0.00%
-Accuracy of move : 0.00%
-Accuracy of pull : 0.00%
-Accuracy of rip : 0.00%
-Accuracy of screw : 0.00%
-Accuracy of spread : 0.00%
-Accuracy of take : 0.00%
-Accuracy of wash : 0.00%
-train Phase:   0%|          | 0/32 [00:00<?, ?it/s]train Phase:   3%|▎         | 1/32 [00:00<00:05,  6.18it/s]train Phase:   6%|▋         | 2/32 [00:00<00:04,  6.18it/s]train Phase:   9%|▉         | 3/32 [00:00<00:04,  6.46it/s]train Phase:  12%|█▎        | 4/32 [00:00<00:04,  6.57it/s]train Phase:  16%|█▌        | 5/32 [00:00<00:04,  6.31it/s]train Phase:  19%|█▉        | 6/32 [00:00<00:03,  6.51it/s]train Phase:  22%|██▏       | 7/32 [00:01<00:03,  6.53it/s]train Phase:  25%|██▌       | 8/32 [00:01<00:03,  6.43it/s]train Phase:  28%|██▊       | 9/32 [00:01<00:03,  6.41it/s]train Phase:  31%|███▏      | 10/32 [00:01<00:03,  6.53it/s]train Phase:  34%|███▍      | 11/32 [00:01<00:03,  6.41it/s]train Phase:  38%|███▊      | 12/32 [00:01<00:03,  6.54it/s]train Phase:  41%|████      | 13/32 [00:02<00:02,  6.51it/s]train Phase:  44%|████▍     | 14/32 [00:02<00:02,  6.46it/s]train Phase:  47%|████▋     | 15/32 [00:02<00:02,  6.58it/s]train Phase:  50%|█████     | 16/32 [00:02<00:02,  6.51it/s]train Phase:  53%|█████▎    | 17/32 [00:02<00:02,  6.61it/s]train Phase:  56%|█████▋    | 18/32 [00:02<00:02,  6.59it/s]train Phase:  59%|█████▉    | 19/32 [00:02<00:02,  6.44it/s]train Phase:  62%|██████▎   | 20/32 [00:03<00:01,  6.58it/s]train Phase:  66%|██████▌   | 21/32 [00:03<00:01,  6.60it/s]train Phase:  69%|██████▉   | 22/32 [00:03<00:01,  6.65it/s]train Phase:  72%|███████▏  | 23/32 [00:03<00:01,  6.65it/s]train Phase:  75%|███████▌  | 24/32 [00:03<00:01,  6.71it/s]train Phase:  78%|███████▊  | 25/32 [00:03<00:01,  6.69it/s]train Phase:  81%|████████▏ | 26/32 [00:03<00:00,  6.57it/s]train Phase:  84%|████████▍ | 27/32 [00:04<00:00,  6.63it/s]train Phase:  88%|████████▊ | 28/32 [00:04<00:00,  6.64it/s]train Phase:  91%|█████████ | 29/32 [00:04<00:00,  6.54it/s]train Phase:  94%|█████████▍| 30/32 [00:04<00:00,  6.68it/s]train Phase:  97%|█████████▋| 31/32 [00:04<00:00,  6.75it/s]train Phase: 100%|██████████| 32/32 [00:04<00:00,  6.62it/s]train Phase: 100%|██████████| 32/32 [00:04<00:00,  6.55it/s]
-Epoch 7/10 - train Loss: 2.3766, train Accuracy: 0.8438
-val Phase:   0%|          | 0/32 [00:00<?, ?it/s]val Phase:   6%|▋         | 2/32 [00:00<00:01, 15.94it/s]val Phase:  12%|█▎        | 4/32 [00:00<00:01, 17.58it/s]val Phase:  19%|█▉        | 6/32 [00:00<00:01, 17.08it/s]val Phase:  25%|██▌       | 8/32 [00:00<00:01, 16.35it/s]val Phase:  31%|███▏      | 10/32 [00:00<00:01, 16.40it/s]val Phase:  38%|███▊      | 12/32 [00:00<00:01, 16.40it/s]val Phase:  44%|████▍     | 14/32 [00:00<00:01, 16.26it/s]val Phase:  50%|█████     | 16/32 [00:00<00:00, 16.31it/s]val Phase:  56%|█████▋    | 18/32 [00:01<00:00, 16.50it/s]val Phase:  62%|██████▎   | 20/32 [00:01<00:00, 16.50it/s]val Phase:  69%|██████▉   | 22/32 [00:01<00:00, 16.77it/s]val Phase:  75%|███████▌  | 24/32 [00:01<00:00, 17.30it/s]val Phase:  81%|████████▏ | 26/32 [00:01<00:00, 17.36it/s]val Phase:  88%|████████▊ | 28/32 [00:01<00:00, 17.41it/s]val Phase:  94%|█████████▍| 30/32 [00:01<00:00, 17.14it/s]val Phase: 100%|██████████| 32/32 [00:01<00:00, 16.93it/s]val Phase: 100%|██████████| 32/32 [00:01<00:00, 16.80it/s]
-Training Epochs:  70%|███████   | 7/10 [00:51<00:20,  6.95s/it]Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0217,  0.0211, -0.0244,  ..., -0.0228, -0.0248, -0.0229],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.9109110832214355
-Predicted indices: tensor([835], device='cuda:0')
-Max values: tensor([0.1400], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 835 default is 0
-True label: change, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-0.0170, -0.0025, -0.0093,  ..., -0.0199, -0.0219,  0.0044],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.955368518829346
-Predicted indices: tensor([272], device='cuda:0')
-Max values: tensor([0.1593], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 272 default is 0
-True label: spread, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0598,  0.0617, -0.0225,  ..., -0.0174, -0.0194, -0.0089],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.955155849456787
-Predicted indices: tensor([487], device='cuda:0')
-Max values: tensor([0.1726], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 487 default is 0
-True label: move, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0482,  0.0509, -0.0156,  ..., -0.0210, -0.0230, -0.0116],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.917525768280029
-Predicted indices: tensor([487], device='cuda:0')
-Max values: tensor([0.1525], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 487 default is 0
-True label: rip, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-0.0135, -0.0145, -0.0131,  ..., -0.0232, -0.0233, -0.0214],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.951350212097168
-Predicted indices: tensor([937], device='cuda:0')
-Max values: tensor([0.1561], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 937 default is 0
-True label: take, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0492,  0.0605, -0.0078,  ..., -0.0189, -0.0209, -0.0190],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.95806360244751
-Predicted indices: tensor([487], device='cuda:0')
-Max values: tensor([0.1665], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 487 default is 0
-True label: pull, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0114,  0.0025, -0.0260,  ..., -0.0065, -0.0068, -0.0261],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.92716646194458
-Predicted indices: tensor([388], device='cuda:0')
-Max values: tensor([0.1303], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 388 default is 0
-True label: dry, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-0.0153, -0.0137, -0.0186,  ..., -0.0196, -0.0212,  0.0479],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.952439308166504
-Predicted indices: tensor([937], device='cuda:0')
-Max values: tensor([0.1563], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 937 default is 0
-True label: take, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-0.0141,  0.0126, -0.0160,  ..., -0.0198, -0.0217, -0.0168],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.832254409790039
-Predicted indices: tensor([388], device='cuda:0')
-Max values: tensor([0.1447], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 388 default is 0
-True label: rip, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0419,  0.0446, -0.0268,  ..., -0.0210, -0.0193, -0.0211],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.941699504852295
-Predicted indices: tensor([163], device='cuda:0')
-Max values: tensor([0.1531], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 163 default is 0
-True label: screw, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-0.0146,  0.0280, -0.0152,  ..., -0.0208, -0.0213, -0.0135],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.914527893066406
-Predicted indices: tensor([388], device='cuda:0')
-Max values: tensor([0.1643], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 388 default is 0
-True label: wash, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0404,  0.0429, -0.0239,  ..., -0.0198, -0.0188, -0.0197],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.89164400100708
-Predicted indices: tensor([487], device='cuda:0')
-Max values: tensor([0.1478], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 487 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0115,  0.0181, -0.0226,  ..., -0.0269, -0.0278, -0.0248],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.954206943511963
-Predicted indices: tensor([892], device='cuda:0')
-Max values: tensor([0.1298], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 892 default is 0
-True label: take, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-0.0155, -0.0120,  0.0056,  ..., -0.0197, -0.0212,  0.0022],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.952934741973877
-Predicted indices: tensor([937], device='cuda:0')
-Max values: tensor([0.1613], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 937 default is 0
-True label: take, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0510,  0.0555, -0.0093,  ..., -0.0184, -0.0204, -0.0185],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.941296577453613
-Predicted indices: tensor([487], device='cuda:0')
-Max values: tensor([0.1567], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 487 default is 0
-True label: close, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-0.0109, -0.0116, -0.0147,  ..., -0.0205, -0.0212,  0.0125],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.948269844055176
-Predicted indices: tensor([937], device='cuda:0')
-Max values: tensor([0.1485], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 937 default is 0
-True label: take, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0404,  0.0429, -0.0239,  ..., -0.0198, -0.0188, -0.0197],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.89164400100708
-Predicted indices: tensor([487], device='cuda:0')
-Max values: tensor([0.1478], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 487 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0013,  0.0104, -0.0223,  ..., -0.0226, -0.0246, -0.0033],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.930749416351318
-Predicted indices: tensor([498], device='cuda:0')
-Max values: tensor([0.1409], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 498 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-0.0165,  0.0276, -0.0033,  ..., -0.0175, -0.0195, -0.0160],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.94853401184082
-Predicted indices: tensor([981], device='cuda:0')
-Max values: tensor([0.1442], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 981 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0422,  0.0455, -0.0239,  ..., -0.0180, -0.0202, -0.0184],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.889760971069336
-Predicted indices: tensor([163], device='cuda:0')
-Max values: tensor([0.1509], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 163 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0156,  0.0325,  0.0094,  ..., -0.0249, -0.0269, -0.0047],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.916417598724365
-Predicted indices: tensor([642], device='cuda:0')
-Max values: tensor([0.1221], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 642 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0460,  0.0490, -0.0239,  ..., -0.0182, -0.0198, -0.0183],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.886047840118408
-Predicted indices: tensor([163], device='cuda:0')
-Max values: tensor([0.1534], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 163 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0435,  0.0549, -0.0245,  ..., -0.0200, -0.0220, -0.0202],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.888519763946533
-Predicted indices: tensor([487], device='cuda:0')
-Max values: tensor([0.1600], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 487 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0610,  0.0622, -0.0116,  ..., -0.0178, -0.0198, -0.0173],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.871006965637207
-Predicted indices: tensor([163], device='cuda:0')
-Max values: tensor([0.1690], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 163 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0397,  0.0417, -0.0209,  ..., -0.0196, -0.0216, -0.0171],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.8923139572143555
-Predicted indices: tensor([1001], device='cuda:0')
-Max values: tensor([0.1379], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 1001 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 1.9590e-02,  2.4352e-02,  6.8184e-05,  ..., -2.4120e-02,
-        -2.4476e-02, -2.4195e-02], device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.912411689758301
-Predicted indices: tensor([163], device='cuda:0')
-Max values: tensor([0.1225], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 163 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0307,  0.0406, -0.0242,  ..., -0.0207, -0.0238, -0.0219],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.9012627601623535
-Predicted indices: tensor([691], device='cuda:0')
-Max values: tensor([0.1211], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 691 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0275,  0.0368, -0.0187,  ..., -0.0219, -0.0239, -0.0220],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.904541969299316
-Predicted indices: tensor([554], device='cuda:0')
-Max values: tensor([0.1330], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 554 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-0.0153, -0.0141, -0.0181,  ..., -0.0156, -0.0175, -0.0148],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.947290897369385
-Predicted indices: tensor([960], device='cuda:0')
-Max values: tensor([0.1773], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 960 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0582,  0.0598, -0.0251,  ..., -0.0166, -0.0186, -0.0167],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.8738484382629395
-Predicted indices: tensor([487], device='cuda:0')
-Max values: tensor([0.1774], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 487 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0543,  0.0587, -0.0253,  ..., -0.0208, -0.0228, -0.0180],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.877707481384277
-Predicted indices: tensor([163], device='cuda:0')
-Max values: tensor([0.1604], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 163 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-0.0144, -0.0129, -0.0165,  ..., -0.0174, -0.0191,  0.0056],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.946418285369873
-Predicted indices: tensor([498], device='cuda:0')
-Max values: tensor([0.1663], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 498 default is 0
-True label: add, Predicted label: add
-Epoch 7/10 - val Loss: 6.9182, val Accuracy: 0.0000
-Accuracy of add : 0.00%
-Accuracy of change : 0.00%
-Accuracy of close : 0.00%
-Accuracy of dry : 0.00%
-Accuracy of move : 0.00%
-Accuracy of pull : 0.00%
-Accuracy of rip : 0.00%
-Accuracy of screw : 0.00%
-Accuracy of spread : 0.00%
-Accuracy of take : 0.00%
-Accuracy of wash : 0.00%
-train Phase:   0%|          | 0/32 [00:00<?, ?it/s]train Phase:   3%|▎         | 1/32 [00:00<00:04,  6.45it/s]train Phase:   6%|▋         | 2/32 [00:00<00:04,  6.42it/s]train Phase:   9%|▉         | 3/32 [00:00<00:04,  6.69it/s]train Phase:  12%|█▎        | 4/32 [00:00<00:04,  6.78it/s]train Phase:  16%|█▌        | 5/32 [00:00<00:04,  6.60it/s]train Phase:  19%|█▉        | 6/32 [00:00<00:03,  6.74it/s]train Phase:  22%|██▏       | 7/32 [00:01<00:03,  6.65it/s]train Phase:  25%|██▌       | 8/32 [00:01<00:03,  6.53it/s]train Phase:  28%|██▊       | 9/32 [00:01<00:03,  6.49it/s]train Phase:  31%|███▏      | 10/32 [00:01<00:03,  6.63it/s]train Phase:  34%|███▍      | 11/32 [00:01<00:03,  5.98it/s]train Phase:  38%|███▊      | 12/32 [00:01<00:03,  6.11it/s]train Phase:  41%|████      | 13/32 [00:02<00:03,  6.29it/s]train Phase:  44%|████▍     | 14/32 [00:02<00:02,  6.28it/s]train Phase:  47%|████▋     | 15/32 [00:02<00:02,  6.46it/s]train Phase:  50%|█████     | 16/32 [00:02<00:02,  6.44it/s]train Phase:  53%|█████▎    | 17/32 [00:02<00:02,  6.52it/s]train Phase:  56%|█████▋    | 18/32 [00:02<00:02,  6.53it/s]train Phase:  59%|█████▉    | 19/32 [00:02<00:02,  6.46it/s]train Phase:  62%|██████▎   | 20/32 [00:03<00:01,  6.60it/s]train Phase:  66%|██████▌   | 21/32 [00:03<00:01,  6.62it/s]train Phase:  69%|██████▉   | 22/32 [00:03<00:01,  6.63it/s]train Phase:  72%|███████▏  | 23/32 [00:03<00:01,  6.71it/s]train Phase:  75%|███████▌  | 24/32 [00:03<00:01,  6.81it/s]train Phase:  78%|███████▊  | 25/32 [00:03<00:01,  6.82it/s]train Phase:  81%|████████▏ | 26/32 [00:03<00:00,  6.70it/s]train Phase:  84%|████████▍ | 27/32 [00:04<00:00,  6.73it/s]train Phase:  88%|████████▊ | 28/32 [00:04<00:00,  6.77it/s]train Phase:  91%|█████████ | 29/32 [00:04<00:00,  6.63it/s]train Phase:  94%|█████████▍| 30/32 [00:04<00:00,  6.69it/s]train Phase:  97%|█████████▋| 31/32 [00:04<00:00,  6.77it/s]train Phase: 100%|██████████| 32/32 [00:04<00:00,  6.56it/s]train Phase: 100%|██████████| 32/32 [00:04<00:00,  6.56it/s]
-Epoch 8/10 - train Loss: 2.3757, train Accuracy: 0.8438
-val Phase:   0%|          | 0/32 [00:00<?, ?it/s]val Phase:   6%|▋         | 2/32 [00:00<00:01, 16.06it/s]val Phase:  12%|█▎        | 4/32 [00:00<00:01, 17.56it/s]val Phase:  19%|█▉        | 6/32 [00:00<00:01, 17.05it/s]val Phase:  25%|██▌       | 8/32 [00:00<00:01, 16.41it/s]val Phase:  31%|███▏      | 10/32 [00:00<00:01, 16.51it/s]val Phase:  38%|███▊      | 12/32 [00:00<00:01, 16.25it/s]val Phase:  44%|████▍     | 14/32 [00:00<00:01, 16.14it/s]val Phase:  50%|█████     | 16/32 [00:00<00:01, 15.72it/s]val Phase:  56%|█████▋    | 18/32 [00:01<00:00, 16.10it/s]val Phase:  62%|██████▎   | 20/32 [00:01<00:00, 16.28it/s]val Phase:  69%|██████▉   | 22/32 [00:01<00:00, 16.62it/s]val Phase:  75%|███████▌  | 24/32 [00:01<00:00, 17.19it/s]val Phase:  81%|████████▏ | 26/32 [00:01<00:00, 17.25it/s]val Phase:  88%|████████▊ | 28/32 [00:01<00:00, 17.41it/s]val Phase:  94%|█████████▍| 30/32 [00:01<00:00, 17.15it/s]val Phase: 100%|██████████| 32/32 [00:01<00:00, 16.97it/s]val Phase: 100%|██████████| 32/32 [00:01<00:00, 16.70it/s]
-Training Epochs:  80%|████████  | 8/10 [00:58<00:13,  6.90s/it]Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0276,  0.0193, -0.0255,  ..., -0.0229, -0.0249, -0.0230],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.91269588470459
-Predicted indices: tensor([835], device='cuda:0')
-Max values: tensor([0.1409], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 835 default is 0
-True label: change, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-0.0159, -0.0102, -0.0033,  ..., -0.0195, -0.0216, -0.0059],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.95405387878418
-Predicted indices: tensor([272], device='cuda:0')
-Max values: tensor([0.1618], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 272 default is 0
-True label: spread, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0615,  0.0518, -0.0241,  ..., -0.0182, -0.0202, -0.0104],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.95558500289917
-Predicted indices: tensor([487], device='cuda:0')
-Max values: tensor([0.1655], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 487 default is 0
-True label: move, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0500,  0.0430, -0.0172,  ..., -0.0209, -0.0229, -0.0145],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.9350128173828125
-Predicted indices: tensor([1001], device='cuda:0')
-Max values: tensor([0.1451], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 1001 default is 0
-True label: rip, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-0.0130, -0.0137, -0.0147,  ..., -0.0223, -0.0224, -0.0222],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.950771808624268
-Predicted indices: tensor([937], device='cuda:0')
-Max values: tensor([0.1667], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 937 default is 0
-True label: take, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0516,  0.0475, -0.0084,  ..., -0.0191, -0.0211, -0.0193],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.960233211517334
-Predicted indices: tensor([487], device='cuda:0')
-Max values: tensor([0.1622], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 487 default is 0
-True label: pull, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 1.3809e-02, -8.5389e-05, -2.6809e-02,  ..., -1.2964e-02,
-        -1.6758e-02, -2.5602e-02], device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.933218955993652
-Predicted indices: tensor([388], device='cuda:0')
-Max values: tensor([0.1313], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 388 default is 0
-True label: dry, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-0.0140, -0.0129, -0.0175,  ..., -0.0199, -0.0217,  0.0402],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.951635360717773
-Predicted indices: tensor([937], device='cuda:0')
-Max values: tensor([0.1608], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 937 default is 0
-True label: take, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-0.0143,  0.0090, -0.0165,  ..., -0.0204, -0.0220, -0.0173],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.831206321716309
-Predicted indices: tensor([388], device='cuda:0')
-Max values: tensor([0.1417], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 388 default is 0
-True label: rip, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0445,  0.0369, -0.0279,  ..., -0.0216, -0.0229, -0.0218],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.922654151916504
-Predicted indices: tensor([293], device='cuda:0')
-Max values: tensor([0.1443], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 293 default is 0
-True label: screw, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-0.0148,  0.0193, -0.0168,  ..., -0.0216, -0.0220, -0.0191],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.910147666931152
-Predicted indices: tensor([388], device='cuda:0')
-Max values: tensor([0.1490], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 388 default is 0
-True label: wash, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0431,  0.0368, -0.0257,  ..., -0.0205, -0.0212, -0.0207],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.888920307159424
-Predicted indices: tensor([293], device='cuda:0')
-Max values: tensor([0.1434], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 293 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0125,  0.0099, -0.0245,  ..., -0.0266, -0.0272, -0.0254],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.9535932540893555
-Predicted indices: tensor([892], device='cuda:0')
-Max values: tensor([0.1403], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 892 default is 0
-True label: take, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-0.0151, -0.0164,  0.0073,  ..., -0.0198, -0.0216,  0.0059],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.953376770019531
-Predicted indices: tensor([937], device='cuda:0')
-Max values: tensor([0.1619], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 937 default is 0
-True label: take, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0549,  0.0485, -0.0101,  ..., -0.0188, -0.0208, -0.0189],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.942144393920898
-Predicted indices: tensor([487], device='cuda:0')
-Max values: tensor([0.1491], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 487 default is 0
-True label: close, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-0.0081, -0.0112, -0.0144,  ..., -0.0203, -0.0207, -0.0094],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.948073387145996
-Predicted indices: tensor([937], device='cuda:0')
-Max values: tensor([0.1582], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 937 default is 0
-True label: take, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0431,  0.0368, -0.0257,  ..., -0.0205, -0.0212, -0.0207],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.888920307159424
-Predicted indices: tensor([293], device='cuda:0')
-Max values: tensor([0.1434], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 293 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0038,  0.0038, -0.0227,  ..., -0.0232, -0.0252, -0.0075],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.928167343139648
-Predicted indices: tensor([498], device='cuda:0')
-Max values: tensor([0.1313], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 498 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-0.0161,  0.0137,  0.0012,  ..., -0.0179, -0.0199, -0.0171],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.948098182678223
-Predicted indices: tensor([981], device='cuda:0')
-Max values: tensor([0.1370], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 981 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0442,  0.0375, -0.0250,  ..., -0.0187, -0.0207, -0.0189],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.887841701507568
-Predicted indices: tensor([1001], device='cuda:0')
-Max values: tensor([0.1470], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 1001 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0181,  0.0247,  0.0081,  ..., -0.0249, -0.0269, -0.0134],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.913928031921387
-Predicted indices: tensor([498], device='cuda:0')
-Max values: tensor([0.1196], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 498 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0483,  0.0412, -0.0254,  ..., -0.0186, -0.0206, -0.0188],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.883668899536133
-Predicted indices: tensor([1001], device='cuda:0')
-Max values: tensor([0.1458], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 1001 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0464,  0.0433, -0.0266,  ..., -0.0207, -0.0227, -0.0208],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.885602951049805
-Predicted indices: tensor([487], device='cuda:0')
-Max values: tensor([0.1559], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 487 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0629,  0.0520, -0.0122,  ..., -0.0182, -0.0203, -0.0183],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.869091987609863
-Predicted indices: tensor([163], device='cuda:0')
-Max values: tensor([0.1613], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 163 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0431,  0.0364, -0.0229,  ..., -0.0205, -0.0225, -0.0180],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.888879776000977
-Predicted indices: tensor([1001], device='cuda:0')
-Max values: tensor([0.1430], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 1001 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0226,  0.0205, -0.0020,  ..., -0.0247, -0.0266, -0.0254],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.9093756675720215
-Predicted indices: tensor([293], device='cuda:0')
-Max values: tensor([0.1316], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 293 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0348,  0.0376, -0.0255,  ..., -0.0219, -0.0245, -0.0227],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.897224426269531
-Predicted indices: tensor([691], device='cuda:0')
-Max values: tensor([0.1219], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 691 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0328,  0.0300, -0.0136,  ..., -0.0223, -0.0243, -0.0225],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.899167060852051
-Predicted indices: tensor([293], device='cuda:0')
-Max values: tensor([0.1377], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 293 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-0.0152, -0.0138, -0.0181,  ..., -0.0160, -0.0180, -0.0158],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.947190284729004
-Predicted indices: tensor([960], device='cuda:0')
-Max values: tensor([0.1768], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 960 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0611,  0.0512, -0.0266,  ..., -0.0174, -0.0194, -0.0175],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.8708720207214355
-Predicted indices: tensor([487], device='cuda:0')
-Max values: tensor([0.1749], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 487 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0561,  0.0491, -0.0270,  ..., -0.0215, -0.0235, -0.0188],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.875912666320801
-Predicted indices: tensor([163], device='cuda:0')
-Max values: tensor([0.1527], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 163 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-0.0148, -0.0128, -0.0175,  ..., -0.0172, -0.0187, -0.0020],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.946763038635254
-Predicted indices: tensor([498], device='cuda:0')
-Max values: tensor([0.1602], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 498 default is 0
-True label: add, Predicted label: add
-Epoch 8/10 - val Loss: 6.9170, val Accuracy: 0.0000
-Accuracy of add : 0.00%
-Accuracy of change : 0.00%
-Accuracy of close : 0.00%
-Accuracy of dry : 0.00%
-Accuracy of move : 0.00%
-Accuracy of pull : 0.00%
-Accuracy of rip : 0.00%
-Accuracy of screw : 0.00%
-Accuracy of spread : 0.00%
-Accuracy of take : 0.00%
-Accuracy of wash : 0.00%
-train Phase:   0%|          | 0/32 [00:00<?, ?it/s]train Phase:   3%|▎         | 1/32 [00:00<00:04,  6.32it/s]train Phase:   6%|▋         | 2/32 [00:00<00:04,  6.37it/s]train Phase:   9%|▉         | 3/32 [00:00<00:04,  6.66it/s]train Phase:  12%|█▎        | 4/32 [00:00<00:04,  6.67it/s]train Phase:  16%|█▌        | 5/32 [00:00<00:04,  6.46it/s]train Phase:  19%|█▉        | 6/32 [00:00<00:03,  6.56it/s]train Phase:  22%|██▏       | 7/32 [00:01<00:03,  6.58it/s]train Phase:  25%|██▌       | 8/32 [00:01<00:03,  6.48it/s]train Phase:  28%|██▊       | 9/32 [00:01<00:03,  6.38it/s]train Phase:  31%|███▏      | 10/32 [00:01<00:03,  6.54it/s]train Phase:  34%|███▍      | 11/32 [00:01<00:03,  6.50it/s]train Phase:  38%|███▊      | 12/32 [00:01<00:03,  6.61it/s]train Phase:  41%|████      | 13/32 [00:01<00:02,  6.64it/s]train Phase:  44%|████▍     | 14/32 [00:02<00:02,  6.51it/s]train Phase:  47%|████▋     | 15/32 [00:02<00:02,  6.63it/s]train Phase:  50%|█████     | 16/32 [00:02<00:02,  6.50it/s]train Phase:  53%|█████▎    | 17/32 [00:02<00:02,  6.62it/s]train Phase:  56%|█████▋    | 18/32 [00:02<00:02,  6.52it/s]train Phase:  59%|█████▉    | 19/32 [00:02<00:02,  6.48it/s]train Phase:  62%|██████▎   | 20/32 [00:03<00:01,  6.61it/s]train Phase:  66%|██████▌   | 21/32 [00:03<00:01,  6.63it/s]train Phase:  69%|██████▉   | 22/32 [00:03<00:01,  6.72it/s]train Phase:  72%|███████▏  | 23/32 [00:03<00:01,  6.71it/s]train Phase:  75%|███████▌  | 24/32 [00:03<00:01,  6.81it/s]train Phase:  78%|███████▊  | 25/32 [00:03<00:01,  6.83it/s]train Phase:  81%|████████▏ | 26/32 [00:03<00:00,  6.80it/s]train Phase:  84%|████████▍ | 27/32 [00:04<00:00,  6.81it/s]train Phase:  88%|████████▊ | 28/32 [00:04<00:00,  6.82it/s]train Phase:  91%|█████████ | 29/32 [00:04<00:00,  6.67it/s]train Phase:  94%|█████████▍| 30/32 [00:04<00:00,  6.71it/s]train Phase:  97%|█████████▋| 31/32 [00:04<00:00,  6.79it/s]train Phase: 100%|██████████| 32/32 [00:04<00:00,  6.66it/s]train Phase: 100%|██████████| 32/32 [00:04<00:00,  6.62it/s]
-Epoch 9/10 - train Loss: 2.3752, train Accuracy: 0.8438
-val Phase:   0%|          | 0/32 [00:00<?, ?it/s]val Phase:   6%|▋         | 2/32 [00:00<00:01, 16.07it/s]val Phase:  12%|█▎        | 4/32 [00:00<00:01, 17.33it/s]val Phase:  19%|█▉        | 6/32 [00:00<00:01, 16.99it/s]val Phase:  25%|██▌       | 8/32 [00:00<00:01, 16.29it/s]val Phase:  31%|███▏      | 10/32 [00:00<00:01, 16.36it/s]val Phase:  38%|███▊      | 12/32 [00:00<00:01, 16.39it/s]val Phase:  44%|████▍     | 14/32 [00:00<00:01, 16.25it/s]val Phase:  50%|█████     | 16/32 [00:00<00:00, 16.30it/s]val Phase:  56%|█████▋    | 18/32 [00:01<00:00, 16.49it/s]val Phase:  62%|██████▎   | 20/32 [00:01<00:00, 16.51it/s]val Phase:  69%|██████▉   | 22/32 [00:01<00:00, 16.79it/s]val Phase:  75%|███████▌  | 24/32 [00:01<00:00, 17.34it/s]val Phase:  81%|████████▏ | 26/32 [00:01<00:00, 17.36it/s]val Phase:  88%|████████▊ | 28/32 [00:01<00:00, 17.45it/s]val Phase:  94%|█████████▍| 30/32 [00:01<00:00, 17.24it/s]val Phase: 100%|██████████| 32/32 [00:01<00:00, 17.03it/s]val Phase: 100%|██████████| 32/32 [00:01<00:00, 16.81it/s]
-Training Epochs:  90%|█████████ | 9/10 [01:04<00:06,  6.85s/it]Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0305,  0.0115, -0.0260,  ..., -0.0238, -0.0259, -0.0240],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.9205322265625
-Predicted indices: tensor([835], device='cuda:0')
-Max values: tensor([0.1511], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 835 default is 0
-True label: change, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-0.0160, -0.0153, -0.0109,  ..., -0.0202, -0.0223, -0.0056],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.954569339752197
-Predicted indices: tensor([272], device='cuda:0')
-Max values: tensor([0.1520], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 272 default is 0
-True label: spread, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0626,  0.0385, -0.0251,  ..., -0.0192, -0.0212, -0.0112],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.956206798553467
-Predicted indices: tensor([487], device='cuda:0')
-Max values: tensor([0.1678], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 487 default is 0
-True label: move, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0563,  0.0339, -0.0198,  ..., -0.0216, -0.0236, -0.0143],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.938290119171143
-Predicted indices: tensor([487], device='cuda:0')
-Max values: tensor([0.1507], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 487 default is 0
-True label: rip, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-0.0126, -0.0139, -0.0169,  ..., -0.0236, -0.0230, -0.0224],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.950553894042969
-Predicted indices: tensor([937], device='cuda:0')
-Max values: tensor([0.1630], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 937 default is 0
-True label: take, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0541,  0.0321, -0.0104,  ..., -0.0203, -0.0223, -0.0204],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.96127986907959
-Predicted indices: tensor([487], device='cuda:0')
-Max values: tensor([0.1652], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 487 default is 0
-True label: pull, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0153, -0.0053, -0.0281,  ..., -0.0173, -0.0186, -0.0253],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.936672687530518
-Predicted indices: tensor([153], device='cuda:0')
-Max values: tensor([0.1261], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 153 default is 0
-True label: dry, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-0.0139, -0.0141, -0.0183,  ..., -0.0190, -0.0215,  0.0396],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.951916217803955
-Predicted indices: tensor([937], device='cuda:0')
-Max values: tensor([0.1576], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 937 default is 0
-True label: take, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-0.0151, -0.0053, -0.0180,  ..., -0.0197, -0.0209, -0.0186],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.854520797729492
-Predicted indices: tensor([691], device='cuda:0')
-Max values: tensor([0.1402], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 691 default is 0
-True label: rip, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0445,  0.0241, -0.0281,  ..., -0.0226, -0.0210, -0.0227],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.930868148803711
-Predicted indices: tensor([163], device='cuda:0')
-Max values: tensor([0.1370], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 163 default is 0
-True label: screw, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-0.0150,  0.0165, -0.0175,  ..., -0.0219, -0.0219, -0.0161],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.916849613189697
-Predicted indices: tensor([388], device='cuda:0')
-Max values: tensor([0.1562], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 388 default is 0
-True label: wash, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0414,  0.0239, -0.0254,  ..., -0.0213, -0.0208, -0.0215],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.890632629394531
-Predicted indices: tensor([487], device='cuda:0')
-Max values: tensor([0.1484], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 487 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0152,  0.0023, -0.0251,  ..., -0.0260, -0.0268, -0.0260],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.958653450012207
-Predicted indices: tensor([892], device='cuda:0')
-Max values: tensor([0.1494], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 892 default is 0
-True label: take, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-0.0161, -0.0175,  0.0010,  ..., -0.0194, -0.0208,  0.0061],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.9540839195251465
-Predicted indices: tensor([388], device='cuda:0')
-Max values: tensor([0.1536], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 388 default is 0
-True label: take, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0560,  0.0335, -0.0109,  ..., -0.0195, -0.0216, -0.0197],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.942908763885498
-Predicted indices: tensor([487], device='cuda:0')
-Max values: tensor([0.1545], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 487 default is 0
-True label: close, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-0.0082, -0.0115, -0.0146,  ..., -0.0193, -0.0196,  0.0010],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.948224067687988
-Predicted indices: tensor([937], device='cuda:0')
-Max values: tensor([0.1446], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 937 default is 0
-True label: take, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0414,  0.0239, -0.0254,  ..., -0.0213, -0.0208, -0.0215],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.890632629394531
-Predicted indices: tensor([487], device='cuda:0')
-Max values: tensor([0.1484], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 487 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0061, -0.0010, -0.0250,  ..., -0.0242, -0.0262,  0.0026],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.925930023193359
-Predicted indices: tensor([498], device='cuda:0')
-Max values: tensor([0.1320], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 498 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-0.0166, -0.0050, -0.0058,  ..., -0.0175, -0.0196, -0.0164],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.948623180389404
-Predicted indices: tensor([981], device='cuda:0')
-Max values: tensor([0.1378], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 981 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0456,  0.0260, -0.0264,  ..., -0.0199, -0.0219, -0.0201],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.88645076751709
-Predicted indices: tensor([487], device='cuda:0')
-Max values: tensor([0.1463], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 487 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0184,  0.0116, -0.0057,  ..., -0.0258, -0.0278, -0.0110],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.913573741912842
-Predicted indices: tensor([498], device='cuda:0')
-Max values: tensor([0.1244], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 498 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0498,  0.0288, -0.0265,  ..., -0.0199, -0.0215, -0.0201],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.882241725921631
-Predicted indices: tensor([487], device='cuda:0')
-Max values: tensor([0.1462], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 487 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0479,  0.0276, -0.0267,  ..., -0.0215, -0.0235, -0.0217],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.884082794189453
-Predicted indices: tensor([487], device='cuda:0')
-Max values: tensor([0.1593], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 487 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0651,  0.0387, -0.0161,  ..., -0.0195, -0.0216, -0.0197],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.866938591003418
-Predicted indices: tensor([487], device='cuda:0')
-Max values: tensor([0.1581], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 487 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0461,  0.0262, -0.0252,  ..., -0.0214, -0.0234, -0.0171],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.885944366455078
-Predicted indices: tensor([1001], device='cuda:0')
-Max values: tensor([0.1397], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 1001 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0234,  0.0111, -0.0030,  ..., -0.0249, -0.0255, -0.0251],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.908650875091553
-Predicted indices: tensor([163], device='cuda:0')
-Max values: tensor([0.1223], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 163 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0388,  0.0225, -0.0270,  ..., -0.0214, -0.0253, -0.0232],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.893245220184326
-Predicted indices: tensor([691], device='cuda:0')
-Max values: tensor([0.1212], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 691 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0329,  0.0181, -0.0208,  ..., -0.0230, -0.0250, -0.0231],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.8990912437438965
-Predicted indices: tensor([293], device='cuda:0')
-Max values: tensor([0.1306], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 293 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-0.0160, -0.0157, -0.0191,  ..., -0.0158, -0.0177, -0.0156],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.948054790496826
-Predicted indices: tensor([960], device='cuda:0')
-Max values: tensor([0.1720], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 960 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0603,  0.0365, -0.0263,  ..., -0.0186, -0.0206, -0.0187],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.871666431427002
-Predicted indices: tensor([487], device='cuda:0')
-Max values: tensor([0.1775], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 487 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0569,  0.0330, -0.0277,  ..., -0.0223, -0.0243, -0.0209],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.875079154968262
-Predicted indices: tensor([163], device='cuda:0')
-Max values: tensor([0.1499], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 163 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-0.0142, -0.0138, -0.0172,  ..., -0.0168, -0.0181, -0.0074],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.946238994598389
-Predicted indices: tensor([498], device='cuda:0')
-Max values: tensor([0.1584], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 498 default is 0
-True label: add, Predicted label: add
-Epoch 9/10 - val Loss: 6.9185, val Accuracy: 0.0000
-Accuracy of add : 0.00%
-Accuracy of change : 0.00%
-Accuracy of close : 0.00%
-Accuracy of dry : 0.00%
-Accuracy of move : 0.00%
-Accuracy of pull : 0.00%
-Accuracy of rip : 0.00%
-Accuracy of screw : 0.00%
-Accuracy of spread : 0.00%
-Accuracy of take : 0.00%
-Accuracy of wash : 0.00%
-train Phase:   0%|          | 0/32 [00:00<?, ?it/s]train Phase:   3%|▎         | 1/32 [00:00<00:05,  6.16it/s]train Phase:   6%|▋         | 2/32 [00:00<00:04,  6.20it/s]train Phase:   9%|▉         | 3/32 [00:00<00:04,  6.49it/s]train Phase:  12%|█▎        | 4/32 [00:00<00:04,  6.58it/s]train Phase:  16%|█▌        | 5/32 [00:00<00:04,  6.43it/s]train Phase:  19%|█▉        | 6/32 [00:00<00:03,  6.59it/s]train Phase:  22%|██▏       | 7/32 [00:01<00:03,  6.60it/s]train Phase:  25%|██▌       | 8/32 [00:01<00:03,  6.40it/s]train Phase:  28%|██▊       | 9/32 [00:01<00:03,  6.34it/s]train Phase:  31%|███▏      | 10/32 [00:01<00:03,  6.50it/s]train Phase:  34%|███▍      | 11/32 [00:01<00:03,  6.42it/s]train Phase:  38%|███▊      | 12/32 [00:01<00:03,  6.55it/s]train Phase:  41%|████      | 13/32 [00:02<00:02,  6.58it/s]train Phase:  44%|████▍     | 14/32 [00:02<00:02,  6.53it/s]train Phase:  47%|████▋     | 15/32 [00:02<00:02,  6.62it/s]train Phase:  50%|█████     | 16/32 [00:02<00:02,  6.49it/s]train Phase:  53%|█████▎    | 17/32 [00:02<00:02,  6.52it/s]train Phase:  56%|█████▋    | 18/32 [00:02<00:02,  6.49it/s]train Phase:  59%|█████▉    | 19/32 [00:02<00:02,  6.45it/s]train Phase:  62%|██████▎   | 20/32 [00:03<00:01,  6.59it/s]train Phase:  66%|██████▌   | 21/32 [00:03<00:01,  6.55it/s]train Phase:  69%|██████▉   | 22/32 [00:03<00:01,  6.66it/s]train Phase:  72%|███████▏  | 23/32 [00:03<00:01,  6.73it/s]train Phase:  75%|███████▌  | 24/32 [00:03<00:01,  6.80it/s]train Phase:  78%|███████▊  | 25/32 [00:03<00:01,  6.81it/s]train Phase:  81%|████████▏ | 26/32 [00:03<00:00,  6.79it/s]train Phase:  84%|████████▍ | 27/32 [00:04<00:00,  6.79it/s]train Phase:  88%|████████▊ | 28/32 [00:04<00:00,  6.72it/s]train Phase:  91%|█████████ | 29/32 [00:04<00:00,  6.52it/s]train Phase:  94%|█████████▍| 30/32 [00:04<00:00,  6.66it/s]train Phase:  97%|█████████▋| 31/32 [00:04<00:00,  6.74it/s]train Phase: 100%|██████████| 32/32 [00:04<00:00,  6.57it/s]train Phase: 100%|██████████| 32/32 [00:04<00:00,  6.57it/s]
-Epoch 10/10 - train Loss: 2.3744, train Accuracy: 0.8438
-val Phase:   0%|          | 0/32 [00:00<?, ?it/s]val Phase:   6%|▋         | 2/32 [00:00<00:01, 16.03it/s]val Phase:  12%|█▎        | 4/32 [00:00<00:01, 17.50it/s]val Phase:  19%|█▉        | 6/32 [00:00<00:01, 17.07it/s]val Phase:  25%|██▌       | 8/32 [00:00<00:01, 16.39it/s]val Phase:  31%|███▏      | 10/32 [00:00<00:01, 16.44it/s]val Phase:  38%|███▊      | 12/32 [00:00<00:01, 16.45it/s]val Phase:  44%|████▍     | 14/32 [00:00<00:01, 16.28it/s]val Phase:  50%|█████     | 16/32 [00:00<00:00, 16.31it/s]val Phase:  56%|█████▋    | 18/32 [00:01<00:00, 16.50it/s]val Phase:  62%|██████▎   | 20/32 [00:01<00:00, 16.50it/s]val Phase:  69%|██████▉   | 22/32 [00:01<00:00, 16.81it/s]val Phase:  75%|███████▌  | 24/32 [00:01<00:00, 17.34it/s]val Phase:  81%|████████▏ | 26/32 [00:01<00:00, 17.39it/s]val Phase:  88%|████████▊ | 28/32 [00:01<00:00, 17.43it/s]val Phase:  94%|█████████▍| 30/32 [00:01<00:00, 17.15it/s]val Phase: 100%|██████████| 32/32 [00:01<00:00, 16.94it/s]val Phase: 100%|██████████| 32/32 [00:01<00:00, 16.81it/s]
-Training Epochs: 100%|██████████| 10/10 [01:11<00:00,  6.83s/it]Training Epochs: 100%|██████████| 10/10 [01:11<00:00,  7.17s/it]
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0314,  0.0223, -0.0255,  ..., -0.0219, -0.0239, -0.0221],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.909735679626465
-Predicted indices: tensor([835], device='cuda:0')
-Max values: tensor([0.1409], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 835 default is 0
-True label: change, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-0.0158, -0.0158,  0.0005,  ..., -0.0196, -0.0216, -0.0012],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.954451560974121
-Predicted indices: tensor([272], device='cuda:0')
-Max values: tensor([0.1481], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 272 default is 0
-True label: spread, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0550,  0.0589, -0.0255,  ..., -0.0175, -0.0195, -0.0092],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.9568681716918945
-Predicted indices: tensor([1001], device='cuda:0')
-Max values: tensor([0.1707], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 1001 default is 0
-True label: move, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0478,  0.0517, -0.0165,  ..., -0.0206, -0.0226, -0.0165],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.926673412322998
-Predicted indices: tensor([1001], device='cuda:0')
-Max values: tensor([0.1580], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 1001 default is 0
-True label: rip, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-0.0129, -0.0146, -0.0157,  ..., -0.0228, -0.0224, -0.0207],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.951269149780273
-Predicted indices: tensor([937], device='cuda:0')
-Max values: tensor([0.1532], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 937 default is 0
-True label: take, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0438,  0.0462, -0.0058,  ..., -0.0189, -0.0209, -0.0190],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.9630126953125
-Predicted indices: tensor([1001], device='cuda:0')
-Max values: tensor([0.1661], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 1001 default is 0
-True label: pull, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0095, -0.0017, -0.0264,  ..., -0.0067, -0.0183, -0.0237],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.932226181030273
-Predicted indices: tensor([412], device='cuda:0')
-Max values: tensor([0.1225], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 412 default is 0
-True label: dry, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-0.0144, -0.0145, -0.0187,  ..., -0.0195, -0.0209,  0.0463],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.952327251434326
-Predicted indices: tensor([937], device='cuda:0')
-Max values: tensor([0.1478], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 937 default is 0
-True label: take, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-0.0151, -0.0105, -0.0175,  ..., -0.0194, -0.0210, -0.0192],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.8488969802856445
-Predicted indices: tensor([691], device='cuda:0')
-Max values: tensor([0.1386], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 691 default is 0
-True label: rip, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0337,  0.0351, -0.0282,  ..., -0.0216, -0.0225, -0.0218],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.949119567871094
-Predicted indices: tensor([1001], device='cuda:0')
-Max values: tensor([0.1439], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 1001 default is 0
-True label: screw, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-0.0142,  0.0119, -0.0165,  ..., -0.0208, -0.0213, -0.0166],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.935100555419922
-Predicted indices: tensor([243], device='cuda:0')
-Max values: tensor([0.1564], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 243 default is 0
-True label: wash, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0305,  0.0331, -0.0248,  ..., -0.0199, -0.0195, -0.0201],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.901546955108643
-Predicted indices: tensor([1001], device='cuda:0')
-Max values: tensor([0.1525], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 1001 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0090,  0.0067, -0.0236,  ..., -0.0249, -0.0251, -0.0243],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.944042205810547
-Predicted indices: tensor([892], device='cuda:0')
-Max values: tensor([0.1536], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 892 default is 0
-True label: take, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-0.0153, -0.0163, -0.0026,  ..., -0.0197, -0.0217, -0.0021],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.952922821044922
-Predicted indices: tensor([937], device='cuda:0')
-Max values: tensor([0.1481], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 937 default is 0
-True label: take, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0481,  0.0502, -0.0067,  ..., -0.0183, -0.0203, -0.0184],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.938677787780762
-Predicted indices: tensor([1001], device='cuda:0')
-Max values: tensor([0.1585], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 1001 default is 0
-True label: close, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-0.0108, -0.0127, -0.0157,  ..., -0.0203, -0.0209,  0.0054],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.949318885803223
-Predicted indices: tensor([192], device='cuda:0')
-Max values: tensor([0.1422], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 192 default is 0
-True label: take, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0305,  0.0331, -0.0248,  ..., -0.0199, -0.0195, -0.0201],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.901546955108643
-Predicted indices: tensor([1001], device='cuda:0')
-Max values: tensor([0.1525], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 1001 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-0.0007,  0.0014, -0.0218,  ..., -0.0233, -0.0253, -0.0064],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.932728290557861
-Predicted indices: tensor([498], device='cuda:0')
-Max values: tensor([0.1387], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 498 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-0.0160, -0.0017, -0.0022,  ..., -0.0185, -0.0205, -0.0181],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.947999477386475
-Predicted indices: tensor([955], device='cuda:0')
-Max values: tensor([0.1320], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 955 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0352,  0.0379, -0.0259,  ..., -0.0181, -0.0202, -0.0183],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.896852970123291
-Predicted indices: tensor([1001], device='cuda:0')
-Max values: tensor([0.1625], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 1001 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0089,  0.0155,  0.0005,  ..., -0.0247, -0.0267, -0.0100],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.923092365264893
-Predicted indices: tensor([498], device='cuda:0')
-Max values: tensor([0.1303], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 498 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0387,  0.0414, -0.0256,  ..., -0.0182, -0.0202, -0.0184],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.893314361572266
-Predicted indices: tensor([1001], device='cuda:0')
-Max values: tensor([0.1605], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 1001 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0348,  0.0375, -0.0261,  ..., -0.0200, -0.0220, -0.0202],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.897248268127441
-Predicted indices: tensor([1001], device='cuda:0')
-Max values: tensor([0.1560], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 1001 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0567,  0.0590, -0.0123,  ..., -0.0179, -0.0199, -0.0176],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.875297546386719
-Predicted indices: tensor([1001], device='cuda:0')
-Max values: tensor([0.1688], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 1001 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0364,  0.0385, -0.0241,  ..., -0.0201, -0.0220, -0.0183],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.8956379890441895
-Predicted indices: tensor([1001], device='cuda:0')
-Max values: tensor([0.1592], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 1001 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0133,  0.0162, -0.0005,  ..., -0.0242, -0.0257, -0.0245],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.918746471405029
-Predicted indices: tensor([293], device='cuda:0')
-Max values: tensor([0.1291], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 293 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0286,  0.0311, -0.0268,  ..., -0.0211, -0.0243, -0.0225],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.903445243835449
-Predicted indices: tensor([1001], device='cuda:0')
-Max values: tensor([0.1328], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 1001 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0208,  0.0252, -0.0158,  ..., -0.0214, -0.0234, -0.0215],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.911224842071533
-Predicted indices: tensor([1001], device='cuda:0')
-Max values: tensor([0.1410], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 1001 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-0.0157, -0.0150, -0.0183,  ..., -0.0152, -0.0174, -0.0150],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.94768762588501
-Predicted indices: tensor([960], device='cuda:0')
-Max values: tensor([0.1713], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 960 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0513,  0.0551, -0.0274,  ..., -0.0169, -0.0188, -0.0170],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.880764007568359
-Predicted indices: tensor([1001], device='cuda:0')
-Max values: tensor([0.1699], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 1001 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([ 0.0463,  0.0486, -0.0279,  ..., -0.0211, -0.0231, -0.0190],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.8857598304748535
-Predicted indices: tensor([1001], device='cuda:0')
-Max values: tensor([0.1546], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 1001 default is 0
-True label: add, Predicted label: add
-Output shape: torch.Size([1, 1024])
-Sample outputs: tensor([-0.0148, -0.0142, -0.0175,  ..., -0.0165, -0.0186, -0.0031],
-       device='cuda:0', grad_fn=<SelectBackward0>)
-Loss: 6.946868419647217
-Predicted indices: tensor([525], device='cuda:0')
-Max values: tensor([0.1508], device='cuda:0', grad_fn=<MaxBackward0>)
-warning:invalid index 525 default is 0
-True label: add, Predicted label: add
-Epoch 10/10 - val Loss: 6.9226, val Accuracy: 0.0000
-Accuracy of add : 0.00%
-Accuracy of change : 0.00%
-Accuracy of close : 0.00%
-Accuracy of dry : 0.00%
-Accuracy of move : 0.00%
-Accuracy of pull : 0.00%
-Accuracy of rip : 0.00%
-Accuracy of screw : 0.00%
-Accuracy of spread : 0.00%
-Accuracy of take : 0.00%
-Accuracy of wash : 0.00%

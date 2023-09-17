@@ -1,34 +1,0 @@
-/home/zheng/miniconda3/envs/prepro_np1.20/lib/python3.8/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
-  warnings.warn(
-/home/zheng/miniconda3/envs/prepro_np1.20/lib/python3.8/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=ResNet50_Weights.IMAGENET1K_V1`. You can also use `weights=ResNet50_Weights.DEFAULT` to get the most up-to-date weights.
-  warnings.warn(msg)
-Training Epochs:   0%|          | 0/3 [00:00<?, ?it/s]
-Training Phase:   0%|          | 0/16 [00:00<?, ?it/s][A
-Training Phase:   6%|▋         | 1/16 [00:00<00:13,  1.12it/s][A
-Training Phase:  12%|█▎        | 2/16 [00:01<00:06,  2.14it/s][A
-Training Phase:  19%|█▉        | 3/16 [00:01<00:04,  3.04it/s][A
-Training Phase:  25%|██▌       | 4/16 [00:01<00:03,  3.86it/s][A
-Training Phase:  31%|███▏      | 5/16 [00:01<00:02,  4.53it/s][A
-Training Phase:  38%|███▊      | 6/16 [00:01<00:01,  5.10it/s][A
-Training Phase:  44%|████▍     | 7/16 [00:01<00:01,  5.53it/s][A
-Training Phase:  50%|█████     | 8/16 [00:01<00:01,  5.91it/s][A
-Training Phase:  56%|█████▋    | 9/16 [00:02<00:01,  6.15it/s][A
-Training Phase:  62%|██████▎   | 10/16 [00:02<00:00,  6.28it/s][A
-Training Phase:  69%|██████▉   | 11/16 [00:02<00:00,  6.41it/s][A
-Training Phase:  75%|███████▌  | 12/16 [00:02<00:00,  6.43it/s][A
-Training Phase:  81%|████████▏ | 13/16 [00:02<00:00,  6.32it/s][A
-Training Phase:  88%|████████▊ | 14/16 [00:02<00:00,  6.50it/s][A
-Training Phase:  94%|█████████▍| 15/16 [00:03<00:00,  6.50it/s][A
-Training Phase: 100%|██████████| 16/16 [00:03<00:00,  6.42it/s][ATraining Phase: 100%|██████████| 16/16 [00:03<00:00,  5.00it/s]
-Epoch 1/3 - Training Loss: 0.0000, Training Accuracy: 1.0000
-
-Validation Phase:   0%|          | 0/16 [00:00<?, ?it/s][AValidation Phase:   0%|          | 0/16 [00:00<?, ?it/s]
-Training Epochs:   0%|          | 0/3 [00:03<?, ?it/s]
-pred_idx:930
-action_idx:0
-Traceback (most recent call last):
-  File "total_completed3.py", line 110, in <module>
-    run_validation_phase(model, val_files, val_df.iloc[:, 1].values, epoch+1)
-  File "total_completed3.py", line 90, in run_validation_phase
-    if action_names[pred_idx] == label:
-IndexError: list index out of range

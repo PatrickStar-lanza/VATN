@@ -1,3 +1,5 @@
+optimizer = torch.optim.Adam(model.parameters(), lr=0.00008, weight_decay=8e-5)
+
 09/06/2023 05:33:36 PM Epoch 1/40 - Training Loss: 3.9044, Training Accuracy: 0.4601
 09/06/2023 05:33:36 PM Saving model to /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed3/model_epoch_0.pth
 09/06/2023 06:11:34 PM Epoch 2/40 - Training Loss: 3.7509, Training Accuracy: 0.4929
@@ -32,11 +34,250 @@
 09/07/2023 03:00:20 AM Saving model to /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed3/model_epoch_15.pth
 09/07/2023 03:38:00 AM Epoch 17/40 - Training Loss: 3.6482, Training Accuracy: 0.5721
 09/07/2023 03:38:00 AM Saving model to /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed3/model_epoch_16.pth
-09/07/2023 04:15:40 AM Epoch 18/40 - Training Loss: 3.6483, Training Accuracy: 0.5690
-09/07/2023 04:15:40 AM Saving model to /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed3/model_epoch_17.pth
-09/07/2023 04:53:15 AM Epoch 19/40 - Training Loss: 3.6563, Training Accuracy: 0.5564
-09/07/2023 04:53:15 AM Saving model to /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed3/model_epoch_18.pth
-09/07/2023 05:30:51 AM Epoch 20/40 - Training Loss: 3.6551, Training Accuracy: 0.5706
-09/07/2023 05:30:51 AM Saving model to /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed3/model_epoch_19.pth
-09/07/2023 06:08:33 AM Epoch 21/40 - Training Loss: 3.6525, Training Accuracy: 0.5726
-09/07/2023 06:08:33 AM Saving model to /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed3/model_epoch_20.pth
+Epoch 18/40 - Training Loss: 3.6483, Training Accuracy: 0.5690██████████████| 11232/11232 [37:33<00:00,  4.90it/s]
+Saving model to /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed3/model_epoch_17.pth
+Training Phase: 100%|███████████████████████████████████████████████████████| 11232/11232 [37:29<00:00,  4.99it/s]
+Epoch 19/40 - Training Loss: 3.6563, Training Accuracy: 0.5564██████████████| 11232/11232 [37:29<00:00,  4.99it/s]
+Saving model to /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformereckpoints_completed3/model_epoch_18.pth
+Training Phase: 100%|██████████████████████████████████████████████████████████| 11232/11232 [37:29<00:00,  4.99it
+Epoch 20/40 - Training Loss: 3.6551, Training Accuracy: 0.5706█████████████████| 11232/11232 [37:29<00:00,  4.80it
+Saving model to /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformereckpoints_completed3/model_epoch_19.pth
+
+Epoch 21/40 - Training Loss: 3.6525, Training Accuracy: 0.5726
+Saving model to /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed3/model_epoch_20.pth
+
+
+optimizer = torch.optim.Adam(model.parameters(), lr=0.00003, weight_decay=3e-5)
+09/07/2023 11:27:24 AM Epoch 1/21 - Training Loss: 4.0743, Training Accuracy: 0.3505
+09/07/2023 11:27:24 AM Saving model to /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed4/model_epoch_0.pth
+09/07/2023 12:04:09 PM Epoch 2/21 - Training Loss: 4.0073, Training Accuracy: 0.4384
+09/07/2023 12:04:09 PM Saving model to /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed4/model_epoch_1.pth
+09/07/2023 12:42:24 PM Epoch 3/21 - Training Loss: 3.8610, Training Accuracy: 0.4810
+09/07/2023 12:42:24 PM Saving model to /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed4/model_epoch_2.pth
+09/07/2023 01:20:16 PM Epoch 4/21 - Training Loss: 3.7633, Training Accuracy: 0.5045
+09/07/2023 01:20:16 PM Saving model to /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed4/model_epoch_3.pth
+09/07/2023 01:57:59 PM Epoch 5/21 - Training Loss: 3.7294, Training Accuracy: 0.5562
+09/07/2023 01:57:59 PM Saving model to /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed4/model_epoch_4.pth
+09/07/2023 02:35:39 PM Epoch 6/21 - Training Loss: 3.7001, Training Accuracy: 0.5160
+09/07/2023 02:35:39 PM Saving model to /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed4/model_epoch_5.pth
+09/07/2023 03:13:23 PM Epoch 7/21 - Training Loss: 3.6882, Training Accuracy: 0.5629
+09/07/2023 03:13:23 PM Saving model to /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed4/model_epoch_6.pth
+09/07/2023 03:51:22 PM Epoch 8/21 - Training Loss: 3.6733, Training Accuracy: 0.5497
+09/07/2023 03:51:22 PM Saving model to /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed4/model_epoch_7.pth
+09/07/2023 04:29:32 PM Epoch 9/21 - Training Loss: 3.6559, Training Accuracy: 0.5713
+09/07/2023 04:29:32 PM Saving model to /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed4/model_epoch_8.pth
+09/07/2023 05:08:10 PM Epoch 10/21 - Training Loss: 3.6441, Training Accuracy: 0.5960
+09/07/2023 05:08:10 PM Saving model to /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed4/model_epoch_9.pth
+09/07/2023 05:46:19 PM Epoch 11/21 - Training Loss: 3.6340, Training Accuracy: 0.6024
+09/07/2023 05:46:19 PM Saving model to /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed4/model_epoch_10.pth
+09/07/2023 06:24:43 PM Epoch 12/21 - Training Loss: 3.6360, Training Accuracy: 0.6006
+09/07/2023 06:24:43 PM Saving model to /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed4/model_epoch_11.pth
+09/07/2023 07:02:43 PM Epoch 13/21 - Training Loss: 3.6198, Training Accuracy: 0.6174
+09/07/2023 07:02:43 PM Saving model to /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed4/model_epoch_12.pth
+09/07/2023 07:40:44 PM Epoch 14/21 - Training Loss: 3.6321, Training Accuracy: 0.5938
+09/07/2023 07:40:44 PM Saving model to /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed4/model_epoch_13.pth
+09/07/2023 08:18:34 PM Epoch 15/21 - Training Loss: 3.6150, Training Accuracy: 0.6135
+09/07/2023 08:18:34 PM Saving model to /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed4/model_epoch_14.pth
+09/07/2023 08:56:14 PM Epoch 16/21 - Training Loss: 3.6214, Training Accuracy: 0.5994
+09/07/2023 08:56:14 PM Saving model to /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed4/model_epoch_15.pth
+09/07/2023 09:33:53 PM Epoch 17/21 - Training Loss: 3.6110, Training Accuracy: 0.5926
+09/07/2023 09:33:53 PM Saving model to /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed4/model_epoch_16.pth
+09/07/2023 10:11:41 PM Epoch 18/21 - Training Loss: 3.6164, Training Accuracy: 0.5970
+09/07/2023 10:11:41 PM Saving model to /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed4/model_epoch_17.pth
+09/07/2023 10:49:25 PM Epoch 19/21 - Training Loss: 3.6090, Training Accuracy: 0.5996
+09/07/2023 10:49:25 PM Saving model to /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed4/model_epoch_18.pth
+09/07/2023 11:27:08 PM Epoch 20/21 - Training Loss: 3.6034, Training Accuracy: 0.6082
+09/07/2023 11:27:08 PM Saving model to /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed4/model_epoch_19.pth
+09/08/2023 12:04:46 AM Epoch 21/21 - Training Loss: 3.6084, Training Accuracy: 0.5963
+09/08/2023 12:04:46 AM Saving model to /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed4/model_epoch_20.pth
+
+optimizer = torch.optim.Adam(model.parameters(), lr=0.00001, weight_decay=1e-2)
+
+
+
+
+09/08/2023 07:28:27 PM Epoch 1/21 - Training Loss: 4.0924, Training Accuracy: 0.4564
+09/08/2023 07:28:27 PM Saving model to /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed7/model_epoch_0.pth
+09/08/2023 08:07:36 PM Epoch 2/21 - Training Loss: 4.0932, Training Accuracy: 0.2361
+09/08/2023 08:07:36 PM Saving model to /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed7/model_epoch_1.pth
+09/08/2023 08:47:26 PM Epoch 3/21 - Training Loss: 4.0932, Training Accuracy: 0.2283
+09/08/2023 08:47:26 PM Saving model to /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed7/model_epoch_2.pth
+09/08/2023 09:26:58 PM Epoch 4/21 - Training Loss: 4.0923, Training Accuracy: 0.2002
+09/08/2023 09:26:58 PM Saving model to /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed7/model_epoch_3.pth
+09/08/2023 10:06:23 PM Epoch 5/21 - Training Loss: 4.0926, Training Accuracy: 0.4065
+09/08/2023 10:06:23 PM Saving model to /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed7/model_epoch_4.pth
+09/08/2023 10:45:53 PM Epoch 6/21 - Training Loss: 4.0924, Training Accuracy: 0.4486
+09/08/2023 10:45:53 PM Saving model to /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed7/model_epoch_5.pth
+09/08/2023 11:25:50 PM Epoch 7/21 - Training Loss: 4.0925, Training Accuracy: 0.4627
+09/08/2023 11:25:50 PM Saving model to /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed7/model_epoch_6.pth
+09/09/2023 12:05:26 AM Epoch 8/21 - Training Loss: 4.0925, Training Accuracy: 0.4574
+09/09/2023 12:05:26 AM Saving model to /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed7/model_epoch_7.pth
+09/09/2023 12:45:11 AM Epoch 9/21 - Training Loss: 4.0925, Training Accuracy: 0.4547
+09/09/2023 12:45:11 AM Saving model to /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed7/model_epoch_8.pth
+09/09/2023 01:24:50 AM Epoch 10/21 - Training Loss: 4.0915, Training Accuracy: 0.4448
+09/09/2023 01:24:50 AM Saving model to /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed7/model_epoch_9.pth
+09/09/2023 02:04:24 AM Epoch 11/21 - Training Loss: 4.0916, Training Accuracy: 0.3883
+09/09/2023 02:04:24 AM Saving model to /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed7/model_epoch_10.pth
+09/09/2023 02:43:51 AM Epoch 12/21 - Training Loss: 4.0917, Training Accuracy: 0.4445
+09/09/2023 02:43:51 AM Saving model to /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed7/model_epoch_11.pth
+09/09/2023 03:23:23 AM Epoch 13/21 - Training Loss: 4.0917, Training Accuracy: 0.4162
+09/09/2023 03:23:23 AM Saving model to /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed7/model_epoch_12.pth
+09/09/2023 04:02:56 AM Epoch 14/21 - Training Loss: 4.0916, Training Accuracy: 0.4581
+09/09/2023 04:02:56 AM Saving model to /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed7/model_epoch_13.pth
+09/09/2023 04:42:37 AM Epoch 15/21 - Training Loss: 4.0917, Training Accuracy: 0.4221
+09/09/2023 04:42:37 AM Saving model to /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed7/model_epoch_14.pth
+09/09/2023 05:22:13 AM Epoch 16/21 - Training Loss: 4.0917, Training Accuracy: 0.4670
+09/09/2023 05:22:13 AM Saving model to /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed7/model_epoch_15.pth
+09/09/2023 06:01:46 AM Epoch 17/21 - Training Loss: 4.0918, Training Accuracy: 0.4212
+09/09/2023 06:01:46 AM Saving model to /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed7/model_epoch_16.pth
+09/09/2023 06:41:14 AM Epoch 18/21 - Training Loss: 4.0917, Training Accuracy: 0.4350
+09/09/2023 06:41:14 AM Saving model to /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed7/model_epoch_17.pth
+09/09/2023 07:20:37 AM Epoch 19/21 - Training Loss: 4.0916, Training Accuracy: 0.4072
+09/09/2023 07:20:37 AM Saving model to /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed7/model_epoch_18.pth
+09/09/2023 07:59:54 AM Epoch 20/21 - Training Loss: 4.0916, Training Accuracy: 0.4329
+09/09/2023 07:59:54 AM Saving model to /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed7/model_epoch_19.pth
+09/09/2023 08:36:06 AM Epoch 21/21 - Training Loss: 4.0916, Training Accuracy: 0.4127
+09/09/2023 08:36:06 AM Saving model to /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed7/model_epoch_20.pth
+
+lr=0.00005, weight_decay=1e-5
+
+09/11/2023 08:09:41 PM Epoch 1/21 - Training Loss: 4.0047, Training Accuracy: 0.3807
+09/11/2023 08:09:41 PM Saving model to /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed9/model_epoch_0.pth
+09/11/2023 08:48:42 PM Epoch 2/21 - Training Loss: 3.7460, Training Accuracy: 0.4861
+09/11/2023 08:48:42 PM Saving model to /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed9/model_epoch_1.pth
+09/11/2023 09:27:38 PM Epoch 3/21 - Training Loss: 3.6397, Training Accuracy: 0.6970
+09/11/2023 09:27:38 PM Saving model to /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed9/model_epoch_2.pth
+09/11/2023 10:06:18 PM Epoch 4/21 - Training Loss: 3.6014, Training Accuracy: 0.7074
+09/11/2023 10:06:18 PM Saving model to /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed9/model_epoch_3.pth
+09/11/2023 10:44:55 PM Epoch 5/21 - Training Loss: 3.5377, Training Accuracy: 0.7400
+09/11/2023 10:44:55 PM Saving model to /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed9/model_epoch_4.pth
+09/11/2023 11:23:38 PM Epoch 6/21 - Training Loss: 3.5317, Training Accuracy: 0.7144
+09/11/2023 11:23:38 PM Saving model to /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed9/model_epoch_5.pth
+09/12/2023 12:02:31 AM Epoch 7/21 - Training Loss: 3.5080, Training Accuracy: 0.7312
+09/12/2023 12:02:31 AM Saving model to /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed9/model_epoch_6.pth
+09/12/2023 12:41:15 AM Epoch 8/21 - Training Loss: 3.4901, Training Accuracy: 0.7343
+09/12/2023 12:41:15 AM Saving model to /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed9/model_epoch_7.pth
+09/12/2023 01:20:08 AM Epoch 9/21 - Training Loss: 3.4940, Training Accuracy: 0.7171
+09/12/2023 01:20:08 AM Saving model to /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed9/model_epoch_8.pth
+09/12/2023 01:59:07 AM Epoch 10/21 - Training Loss: 3.4819, Training Accuracy: 0.7254
+09/12/2023 01:59:07 AM Saving model to /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed9/model_epoch_9.pth
+09/12/2023 02:38:10 AM Epoch 11/21 - Training Loss: 3.4941, Training Accuracy: 0.6989
+09/12/2023 02:38:10 AM Saving model to /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed9/model_epoch_10.pth
+09/12/2023 03:16:38 AM Epoch 12/21 - Training Loss: 3.4599, Training Accuracy: 0.7290
+09/12/2023 03:16:38 AM Saving model to /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed9/model_epoch_11.pth
+09/12/2023 03:55:05 AM Epoch 13/21 - Training Loss: 3.4757, Training Accuracy: 0.7127
+09/12/2023 03:55:05 AM Saving model to /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed9/model_epoch_12.pth
+09/12/2023 04:33:21 AM Epoch 14/21 - Training Loss: 3.4795, Training Accuracy: 0.7075
+09/12/2023 04:33:21 AM Saving model to /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed9/model_epoch_13.pth
+09/12/2023 05:11:51 AM Epoch 15/21 - Training Loss: 3.4512, Training Accuracy: 0.7354
+09/12/2023 05:11:51 AM Saving model to /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed9/model_epoch_14.pth
+09/12/2023 05:50:24 AM Epoch 16/21 - Training Loss: 3.4679, Training Accuracy: 0.7101
+09/12/2023 05:50:24 AM Saving model to /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed9/model_epoch_15.pth
+09/12/2023 06:29:03 AM Epoch 17/21 - Training Loss: 3.4156, Training Accuracy: 0.7658
+09/12/2023 06:29:03 AM Saving model to /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed9/model_epoch_16.pth
+Training Phase: 100%|███████████████████████████████████████████████████████| 11232/11232 [38:28<00:00,  4.86it/s]
+Epoch 17/21 - Training Loss: 3.4156, Training Accuracy: 0.7658██████████████| 11232/11232 [38:28<00:00,  5.23it/s]
+Saving model to /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed9/model_epoch_16.pth
+Training Phase: 100%|███████████████████████████████████████████████████████| 11232/11232 [38:14<00:00,  4.89it/s]
+Epoch 18/21 - Training Loss: 3.4311, Training Accuracy: 0.7444██████████████| 11232/11232 [38:14<00:00,  5.36it/s]
+Saving model to /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed9/model_epoch_17.pth
+Training Phase: 100%|███████████████████████████████████████████████████████| 11232/11232 [38:21<00:00,  4.88it/s]
+Epoch 19/21 - Training Loss: 3.4331, Training Accuracy: 0.7365██████████████| 11232/11232 [38:21<00:00,  5.00it/s]
+Saving model to /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed9/model_epoch_18.pth
+Training Phase: 100%|███████████████████████████████████████████████████████| 11232/11232 [38:09<00:00,  4.91it/s]
+Epoch 20/21 - Training Loss: 3.4353, Training Accuracy: 0.7269██████████████| 11232/11232 [38:09<00:00,  4.69it/s]
+Saving model to /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformereckpoints_completed9/model_epoch_19.pth
+Epoch 21/21 - Training Loss: 3.4483, Training Accuracy: 0.7220
+
+lr=0.0001, weight_decay=1e-5
+09/12/2023 11:26:50 AM Epoch 1/21 - Training Loss: 3.8433, Training Accuracy: 0.4468
+09/12/2023 11:26:50 AM Saving model to /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed11/model_epoch_0.pth
+09/12/2023 12:04:42 PM Epoch 2/21 - Training Loss: 3.6063, Training Accuracy: 0.6124
+09/12/2023 12:04:42 PM Saving model to /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed11/model_epoch_1.pth
+09/12/2023 12:42:43 PM Epoch 3/21 - Training Loss: 3.5448, Training Accuracy: 0.6881
+09/12/2023 12:42:43 PM Saving model to /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed11/model_epoch_2.pth
+09/12/2023 01:20:22 PM Epoch 4/21 - Training Loss: 3.5034, Training Accuracy: 0.7137
+09/12/2023 01:20:22 PM Saving model to /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed11/model_epoch_3.pth
+09/12/2023 01:58:14 PM Epoch 5/21 - Training Loss: 3.4907, Training Accuracy: 0.7029
+09/12/2023 01:58:14 PM Saving model to /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed11/model_epoch_4.pth
+09/12/2023 02:36:00 PM Epoch 6/21 - Training Loss: 3.4859, Training Accuracy: 0.7002
+09/12/2023 02:36:00 PM Saving model to /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed11/model_epoch_5.pth
+09/12/2023 03:13:40 PM Epoch 7/21 - Training Loss: 3.5364, Training Accuracy: 0.6529
+09/12/2023 03:13:40 PM Saving model to /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed11/model_epoch_6.pth
+09/12/2023 03:51:17 PM Epoch 8/21 - Training Loss: 3.4759, Training Accuracy: 0.7153
+09/12/2023 03:51:17 PM Saving model to /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed11/model_epoch_7.pth
+09/12/2023 04:28:59 PM Epoch 9/21 - Training Loss: 3.4826, Training Accuracy: 0.6903
+09/12/2023 04:28:59 PM Saving model to /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed11/model_epoch_8.pth
+09/12/2023 05:06:46 PM Epoch 10/21 - Training Loss: 3.4956, Training Accuracy: 0.6778
+09/12/2023 05:06:46 PM Saving model to /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed11/model_epoch_9.pth
+09/12/2023 05:44:28 PM Epoch 11/21 - Training Loss: 3.5050, Training Accuracy: 0.6651
+09/12/2023 05:44:28 PM Saving model to /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed11/model_epoch_10.pth
+09/12/2023 06:22:12 PM Epoch 12/21 - Training Loss: 3.5015, Training Accuracy: 0.6587
+09/12/2023 06:22:12 PM Saving model to /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed11/model_epoch_11.pth
+09/12/2023 06:59:55 PM Epoch 13/21 - Training Loss: 3.4739, Training Accuracy: 0.6843
+09/12/2023 06:59:55 PM Saving model to /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed11/model_epoch_12.pth
+09/12/2023 07:37:33 PM Epoch 14/21 - Training Loss: 3.4777, Training Accuracy: 0.6782
+09/12/2023 07:37:33 PM Saving model to /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed11/model_epoch_13.pth
+09/12/2023 08:15:14 PM Epoch 15/21 - Training Loss: 3.5249, Training Accuracy: 0.6335
+09/12/2023 08:15:14 PM Saving model to /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed11/model_epoch_14.pth
+09/12/2023 08:52:58 PM Epoch 16/21 - Training Loss: 3.4938, Training Accuracy: 0.6678
+09/12/2023 08:52:58 PM Saving model to /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed11/model_epoch_15.pth
+09/12/2023 09:31:13 PM Epoch 17/21 - Training Loss: 3.5011, Training Accuracy: 0.6603
+09/12/2023 09:31:13 PM Saving model to /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed11/model_epoch_16.pth
+09/12/2023 10:08:54 PM Epoch 18/21 - Training Loss: 3.4739, Training Accuracy: 0.6845
+09/12/2023 10:08:54 PM Saving model to /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed11/model_epoch_17.pth
+09/12/2023 10:46:34 PM Epoch 19/21 - Training Loss: 3.5051, Training Accuracy: 0.6500
+09/12/2023 10:46:34 PM Saving model to /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed11/model_epoch_18.pth
+09/12/2023 11:24:12 PM Epoch 20/21 - Training Loss: 3.4893, Training Accuracy: 0.6667
+09/12/2023 11:24:12 PM Saving model to /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed11/model_epoch_19.pth
+09/13/2023 12:00:41 AM Epoch 21/21 - Training Loss: 3.4566, Training Accuracy: 0.7001
+09/13/2023 12:00:41 AM Saving model to /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed11/model_epoch_20.pth
+
+
+Block_head的forward方法中替换F.relu为F.gelu:
+09/16/2023 06:50:16 AM Epoch 1/21 - Training Loss: 4.0880, Training Accuracy: 0.3347
+09/16/2023 06:50:16 AM Saving model to /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/structure_compare1/model_epoch_0.pth
+09/16/2023 07:28:18 AM Epoch 2/21 - Training Loss: 4.0695, Training Accuracy: 0.4126
+09/16/2023 07:28:18 AM Saving model to /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/structure_compare1/model_epoch_1.pth
+09/16/2023 08:06:24 AM Epoch 3/21 - Training Loss: 4.0295, Training Accuracy: 0.4500
+09/16/2023 08:06:24 AM Saving model to /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/structure_compare1/model_epoch_2.pth
+09/16/2023 08:44:34 AM Epoch 4/21 - Training Loss: 3.9661, Training Accuracy: 0.4554
+09/16/2023 08:44:34 AM Saving model to /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/structure_compare1/model_epoch_3.pth
+09/16/2023 09:22:55 AM Epoch 5/21 - Training Loss: 3.8958, Training Accuracy: 0.4536
+09/16/2023 09:22:55 AM Saving model to /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/structure_compare1/model_epoch_4.pth
+09/16/2023 10:00:57 AM Epoch 6/21 - Training Loss: 3.8305, Training Accuracy: 0.4809
+09/16/2023 10:00:57 AM Saving model to /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/structure_compare1/model_epoch_5.pth
+09/16/2023 10:38:57 AM Epoch 7/21 - Training Loss: 3.7719, Training Accuracy: 0.5867
+09/16/2023 10:38:57 AM Saving model to /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/structure_compare1/model_epoch_6.pth
+09/16/2023 11:02:21 AM Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/structure_compare1/model_epoch_6.pth
+09/16/2023 11:40:56 AM Epoch 8/21 - Training Loss: 3.7339, Training Accuracy: 0.6166
+09/16/2023 11:40:56 AM Saving model to /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/structure_compare1/model_epoch_7.pth
+09/16/2023 12:19:41 PM Epoch 9/21 - Training Loss: 3.6867, Training Accuracy: 0.7176
+09/16/2023 12:19:41 PM Saving model to /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/structure_compare1/model_epoch_8.pth
+09/16/2023 01:12:53 PM Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/structure_compare1/model_epoch_8.pth
+09/16/2023 01:51:35 PM Epoch 10/21 - Training Loss: 3.6694, Training Accuracy: 0.7542
+09/16/2023 01:51:35 PM Saving model to /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/structure_compare1/model_epoch_9.pth
+09/16/2023 02:30:16 PM Epoch 11/21 - Training Loss: 3.6334, Training Accuracy: 0.7780
+09/16/2023 02:30:16 PM Saving model to /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/structure_compare1/model_epoch_10.pth
+09/16/2023 03:09:01 PM Epoch 12/21 - Training Loss: 3.6028, Training Accuracy: 0.7878
+09/16/2023 03:09:01 PM Saving model to /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/structure_compare1/model_epoch_11.pth
+09/16/2023 03:47:40 PM Epoch 13/21 - Training Loss: 3.5804, Training Accuracy: 0.7774
+09/16/2023 03:47:40 PM Saving model to /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/structure_compare1/model_epoch_12.pth
+09/16/2023 04:26:19 PM Epoch 14/21 - Training Loss: 3.5533, Training Accuracy: 0.7796
+09/16/2023 04:26:19 PM Saving model to /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/structure_compare1/model_epoch_13.pth
+09/16/2023 05:04:53 PM Epoch 15/21 - Training Loss: 3.5365, Training Accuracy: 0.7767
+09/16/2023 05:04:53 PM Saving model to /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/structure_compare1/model_epoch_14.pth
+09/16/2023 07:03:49 PM Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/structure_compare1/model_epoch_14.pth
+09/16/2023 07:44:51 PM Epoch 16/21 - Training Loss: 3.5337, Training Accuracy: 0.8094
+09/16/2023 07:44:51 PM Saving model to /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/structure_compare1/model_epoch_15.pth
+09/16/2023 09:00:27 PM Loading model from /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/structure_compare1/model_epoch_15.pth
+09/16/2023 09:41:25 PM Epoch 17/21 - Training Loss: 3.5344, Training Accuracy: 0.7995
+09/16/2023 09:41:25 PM Saving model to /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/structure_compare1/model_epoch_16.pth
+09/16/2023 10:22:22 PM Epoch 18/21 - Training Loss: 3.5289, Training Accuracy: 0.7894
+09/16/2023 10:22:22 PM Saving model to /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/structure_compare1/model_epoch_17.pth
+09/16/2023 10:59:43 PM Epoch 19/21 - Training Loss: 3.5052, Training Accuracy: 0.8119
+09/16/2023 10:59:43 PM Saving model to /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/structure_compare1/model_epoch_18.pth
+09/16/2023 11:33:24 PM Epoch 20/21 - Training Loss: 3.4966, Training Accuracy: 0.8053
+09/16/2023 11:33:24 PM Saving model to /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/structure_compare1/model_epoch_19.pth
+09/17/2023 12:07:10 AM Epoch 21/21 - Training Loss: 3.5020, Training Accuracy: 0.7814
+09/17/2023 12:07:10 AM Saving model to /proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/structure_compare1/model_epoch_20.pth

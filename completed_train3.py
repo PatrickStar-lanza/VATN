@@ -4,7 +4,7 @@ import pickle
 import logging
 from torch import nn
 import pandas as pd
-from transformer_v3_1 import Semi_Transformer
+from transformer_v3_3 import Semi_Transformer
 from torch.cuda.amp import GradScaler, autocast
 from tqdm import tqdm, trange  
 import gzip
@@ -26,7 +26,7 @@ def save_checkpoint(model, path, epoch):
 # Initialize variables
 device = torch.device("cuda")
 criterion = nn.CrossEntropyLoss()
-num_epochs = 40
+num_epochs = 21
 start_epoch = 0
 # Load data
 train_df = pd.read_csv('/home/zheng/VATN/completed1/train.csv')
@@ -36,7 +36,7 @@ num_action_classes = len(action_names)
 
 # Initialize model and optimizer
 model = Semi_Transformer(num_classes=num_action_classes, seq_len=30).to(device)
-optimizer = torch.optim.Adam(model.parameters(), lr=0.00008, weight_decay=8e-5)
+optimizer = torch.optim.Adam(model.parameters(), lr=0.00001, weight_decay=1e-5)
 scaler = GradScaler()
 
 # Function to get accuracy
@@ -67,10 +67,11 @@ def run_training_phase(model, data_files, labels, epoch):
     epoch_acc = running_acc / len(data_files)
     log_and_print(f"Epoch {epoch}/{num_epochs} - Training Loss: {epoch_loss:.4f}, Training Accuracy: {epoch_acc:.4f}")
 
-checkpoint_base_path = "/proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/checkpoints_completed3/model"
+checkpoint_base_path = "/proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/structure_compare1/model"
 
 # Define an initial checkpoint path (update this path if you have a pre-existing model)
-initial_checkpoint_path = None #"/home/zheng/VATN/checkpoints/model_epoch_13.pth"
+initial_checkpoint_path = "/proj/speech/ccu_data/transfer-learning-model/dms2313/Self-Supervised-Embedding-Fusion-Transformer/structure_compare1/model_epoch_15.pth"
+ #"/home/zheng/VATN/checkpoints/model_epoch_13.pth"
 
 # Check if an initial checkpoint exists
 
